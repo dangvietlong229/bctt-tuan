@@ -1,0 +1,59 @@
+{
+  "template_pptx": "MBS Dau Tu - BC Thi truong Tuan - 03.08.2026.pptx",
+  "processor": "process_data.py",
+  "incoming_dir": "incoming",
+  "output_dir": "output_reports",
+  "archive_dir": "archive",
+  "market_context_file": "inputs/market_context.txt",
+  "commentary_reference_file": "inputs/commentary_reference_2026-08-24.json",
+  "report_font": "Arial",
+  "source_max_age_days": 7,
+  "critical_sources": [
+    "sectors",
+    "portfolio",
+    "foreign_buy",
+    "foreign_sell",
+    "liquidity",
+    "vingroup",
+    "foreign_watchlist",
+    "proprietary",
+    "company_news",
+    "calendar"
+  ],
+  "vnindex_chart_image": "incoming/vnindex_chart.png",
+  "proprietary_raw_patterns": {
+    "buy": ["gd tu doanh/*To Chuc Trong Nuoc*Top gia tri rong_Mua*.xlsx"],
+    "sell": ["gd tu doanh/*To Chuc Trong Nuoc*Top gia tri rong_Ban*.xlsx"]
+  },
+  "feature_folders": [
+    "nganh",
+    "danh muc mbs",
+    "gd nuoc ngoai",
+    "thanh khoan tt",
+    "dong gop cua vingroup",
+    "nn ban rong",
+    "gd tu doanh",
+    "tin doanh nghiep",
+    "lich su kien"
+  ],
+  "routing_ticker_sets": {
+    "vingroup": ["VIC", "VHM", "VRE", "VPL"],
+    "banks": ["ACB", "VIB", "VPB", "TCB"]
+  },
+  "source_patterns": {
+    "sectors": ["nganh/Nganh_update *.xlsx"],
+    "portfolio": ["danh muc mbs/Danh muc mbs_update *.xlsx"],
+    "foreign_buy": ["gd nuoc ngoai/*Mua*update*.xlsx"],
+    "foreign_sell": ["gd nuoc ngoai/*Ban*update*.xlsx"],
+    "liquidity": ["thanh khoan tt/Thanh khoan tt_update *.xlsx"],
+    "vingroup": ["dong gop cua vingroup/Dong gop cua vingroup_update *.xlsx"],
+    "foreign_watchlist": ["nn ban rong/NN ban rong_update *.xlsx"],
+    "proprietary": ["gd tu doanh/Thong ke Tu doanh Co phieu_update *.xlsx"],
+    "company_news": ["tin doanh nghiep/BaoCao_TinChinhThong_*_update *.xlsx"],
+    "calendar": ["lich su kien/Lich su kien_update *.xlsx"]
+  },
+  "openai": {
+    "model": "gpt-5.6",
+    "reasoning_effort": "medium"
+  }
+}

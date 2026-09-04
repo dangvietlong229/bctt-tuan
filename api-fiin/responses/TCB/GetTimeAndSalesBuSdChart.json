@@ -1,0 +1,112 @@
+{
+  "page": 1,
+  "pageSize": 0,
+  "totalCount": 17,
+  "items": [
+    {
+      "matchPrice": 31250,
+      "volumeBu": 0,
+      "volumeSd": 0,
+      "tradingDate": "2026-06-12T14:45:00"
+    },
+    {
+      "matchPrice": 31150,
+      "volumeBu": 144600,
+      "volumeSd": 867800,
+      "tradingDate": "2026-06-12T14:15:00"
+    },
+    {
+      "matchPrice": 31300,
+      "volumeBu": 179600,
+      "volumeSd": 407200,
+      "tradingDate": "2026-06-12T14:00:00"
+    },
+    {
+      "matchPrice": 31350,
+      "volumeBu": 257200,
+      "volumeSd": 85700,
+      "tradingDate": "2026-06-12T13:45:00"
+    },
+    {
+      "matchPrice": 31350,
+      "volumeBu": 191600,
+      "volumeSd": 211600,
+      "tradingDate": "2026-06-12T13:30:00"
+    },
+    {
+      "matchPrice": 31400,
+      "volumeBu": 218700,
+      "volumeSd": 232000,
+      "tradingDate": "2026-06-12T13:15:00"
+    },
+    {
+      "matchPrice": 31300,
+      "volumeBu": 122500,
+      "volumeSd": 634800,
+      "tradingDate": "2026-06-12T13:00:00"
+    },
+    {
+      "matchPrice": 31450,
+      "volumeBu": 296800,
+      "volumeSd": 792300,
+      "tradingDate": "2026-06-12T11:15:00"
+    },
+    {
+      "matchPrice": 31400,
+      "volumeBu": 551600,
+      "volumeSd": 519500,
+      "tradingDate": "2026-06-12T11:00:00"
+    },
+    {
+      "matchPrice": 31350,
+      "volumeBu": 739900,
+      "volumeSd": 478300,
+      "tradingDate": "2026-06-12T10:45:00"
+    },
+    {
+      "matchPrice": 31150,
+      "volumeBu": 210700,
+      "volumeSd": 619200,
+      "tradingDate": "2026-06-12T10:30:00"
+    },
+    {
+      "matchPrice": 31250,
+      "volumeBu": 231600,
+      "volumeSd": 110500,
+      "tradingDate": "2026-06-12T10:15:00"
+    },
+    {
+      "matchPrice": 31150,
+      "volumeBu": 312800,
+      "volumeSd": 553900,
+      "tradingDate": "2026-06-12T10:00:00"
+    },
+    {
+      "matchPrice": 31100,
+      "volumeBu": 241500,
+      "volumeSd": 114300,
+      "tradingDate": "2026-06-12T09:45:00"
+    },
+    {
+      "matchPrice": 31200,
+      "volumeBu": 362300,
+      "volumeSd": 457700,
+      "tradingDate": "2026-06-12T09:30:00"
+    },
+    {
+      "matchPrice": 31150,
+      "volumeBu": 130200,
+      "volumeSd": 121500,
+      "tradingDate": "2026-06-12T09:15:00"
+    },
+    {
+      "matchPrice": 31150,
+      "volumeBu": 0,
+      "volumeSd": 0,
+      "tradingDate": "2026-06-12T09:00:00"
+    }
+  ],
+  "packageId": null,
+  "status": "Success",
+  "errors": null
+}

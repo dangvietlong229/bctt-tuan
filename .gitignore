@@ -1,0 +1,12 @@
+# Local credentials and certificates
+.env
+pkcs11.txt
+
+# Python environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local processing artifacts
+.codex_tmp/
+tmp/

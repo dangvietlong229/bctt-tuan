@@ -1,0 +1,2500 @@
+{
+  "page": 0,
+  "pageSize": 0,
+  "totalCount": 0,
+  "items": [
+    {
+      "tradingDate": "2024-06-13T00:00:00",
+      "openPrice": 23614.75413,
+      "closePrice": 23567.047556,
+      "highestPrice": 23662.460704,
+      "lowestPrice": 23519.340982,
+      "totalMatchVolume": 8427486,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-06-14T00:00:00",
+      "openPrice": 23614.75413,
+      "closePrice": 23423.927834,
+      "highestPrice": 23638.607417,
+      "lowestPrice": 23423.927834,
+      "totalMatchVolume": 9839879,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-06-17T00:00:00",
+      "openPrice": 23400.074547,
+      "closePrice": 23185.394964,
+      "highestPrice": 23400.074547,
+      "lowestPrice": 23137.68839,
+      "totalMatchVolume": 9691381,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-06-18T00:00:00",
+      "openPrice": 23185.394964,
+      "closePrice": 23280.808112,
+      "highestPrice": 23423.927834,
+      "lowestPrice": 22994.568668,
+      "totalMatchVolume": 10246777,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-06-19T00:00:00",
+      "openPrice": 23376.22126,
+      "closePrice": 23042.275242,
+      "highestPrice": 23376.22126,
+      "lowestPrice": 22970.715381,
+      "totalMatchVolume": 17033684,
+      "rateAdjusted": 0.5,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-06-20T00:00:00",
+      "openPrice": 23423.927834,
+      "closePrice": 23662.460704,
+      "highestPrice": 23996.406722,
+      "lowestPrice": 23376.22126,
+      "totalMatchVolume": 34599114,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-06-21T00:00:00",
+      "openPrice": 23805.580426,
+      "closePrice": 23376.22126,
+      "highestPrice": 23805.580426,
+      "lowestPrice": 23089.981816,
+      "totalMatchVolume": 11698476,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-06-24T00:00:00",
+      "openPrice": 23376.22126,
+      "closePrice": 22851.448946,
+      "highestPrice": 23376.22126,
+      "lowestPrice": 22517.502928,
+      "totalMatchVolume": 14032254,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-06-25T00:00:00",
+      "openPrice": 22851.448946,
+      "closePrice": 22899.15552,
+      "highestPrice": 22899.15552,
+      "lowestPrice": 22326.676632,
+      "totalMatchVolume": 12075829,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-06-26T00:00:00",
+      "openPrice": 22851.448946,
+      "closePrice": 22899.15552,
+      "highestPrice": 22899.15552,
+      "lowestPrice": 22469.796354,
+      "totalMatchVolume": 7394131,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-06-27T00:00:00",
+      "openPrice": 22565.209502,
+      "closePrice": 22374.383206,
+      "highestPrice": 22612.916076,
+      "lowestPrice": 22278.970058,
+      "totalMatchVolume": 12342414,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-06-28T00:00:00",
+      "openPrice": 22374.383206,
+      "closePrice": 22278.970058,
+      "highestPrice": 22422.08978,
+      "lowestPrice": 21467.9583,
+      "totalMatchVolume": 21105358,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-01T00:00:00",
+      "openPrice": 22040.437188,
+      "closePrice": 21611.078022,
+      "highestPrice": 22040.437188,
+      "lowestPrice": 21611.078022,
+      "totalMatchVolume": 9016895,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-02T00:00:00",
+      "openPrice": 21801.904318,
+      "closePrice": 21849.610892,
+      "highestPrice": 22135.850336,
+      "lowestPrice": 21611.078022,
+      "totalMatchVolume": 9253603,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-03T00:00:00",
+      "openPrice": 21897.317466,
+      "closePrice": 22422.08978,
+      "highestPrice": 22469.796354,
+      "lowestPrice": 21849.610892,
+      "totalMatchVolume": 10188927,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-04T00:00:00",
+      "openPrice": 22422.08978,
+      "closePrice": 22422.08978,
+      "highestPrice": 22469.796354,
+      "lowestPrice": 22231.263484,
+      "totalMatchVolume": 5686704,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-05T00:00:00",
+      "openPrice": 22278.970058,
+      "closePrice": 22422.08978,
+      "highestPrice": 22422.08978,
+      "lowestPrice": 22135.850336,
+      "totalMatchVolume": 8380797,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-08T00:00:00",
+      "openPrice": 22422.08978,
+      "closePrice": 22374.383206,
+      "highestPrice": 22422.08978,
+      "lowestPrice": 22040.437188,
+      "totalMatchVolume": 6703888,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-09T00:00:00",
+      "openPrice": 22231.263484,
+      "closePrice": 22278.970058,
+      "highestPrice": 22422.08978,
+      "lowestPrice": 22183.55691,
+      "totalMatchVolume": 11392911,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-10T00:00:00",
+      "openPrice": 22326.676632,
+      "closePrice": 22088.143762,
+      "highestPrice": 22374.383206,
+      "lowestPrice": 22040.437188,
+      "totalMatchVolume": 10297074,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-11T00:00:00",
+      "openPrice": 22088.143762,
+      "closePrice": 21754.197744,
+      "highestPrice": 22278.970058,
+      "lowestPrice": 21754.197744,
+      "totalMatchVolume": 15429938,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-12T00:00:00",
+      "openPrice": 21801.904318,
+      "closePrice": 21754.197744,
+      "highestPrice": 21945.02404,
+      "lowestPrice": 21754.197744,
+      "totalMatchVolume": 5526545,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-15T00:00:00",
+      "openPrice": 21801.904318,
+      "closePrice": 21611.078022,
+      "highestPrice": 21849.610892,
+      "lowestPrice": 21563.371448,
+      "totalMatchVolume": 6051599,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-16T00:00:00",
+      "openPrice": 21611.078022,
+      "closePrice": 21658.784596,
+      "highestPrice": 21801.904318,
+      "lowestPrice": 21515.664874,
+      "totalMatchVolume": 11035888,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-17T00:00:00",
+      "openPrice": 21801.904318,
+      "closePrice": 22612.916076,
+      "highestPrice": 23089.981816,
+      "lowestPrice": 21754.197744,
+      "totalMatchVolume": 27359168,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-18T00:00:00",
+      "openPrice": 22612.916076,
+      "closePrice": 22612.916076,
+      "highestPrice": 22756.035798,
+      "lowestPrice": 22231.263484,
+      "totalMatchVolume": 11226991,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-19T00:00:00",
+      "openPrice": 22660.62265,
+      "closePrice": 22326.676632,
+      "highestPrice": 22660.62265,
+      "lowestPrice": 22040.437188,
+      "totalMatchVolume": 14099870,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-22T00:00:00",
+      "openPrice": 22231.263484,
+      "closePrice": 22565.209502,
+      "highestPrice": 22708.329224,
+      "lowestPrice": 21945.02404,
+      "totalMatchVolume": 14485586,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-23T00:00:00",
+      "openPrice": 22708.329224,
+      "closePrice": 21992.730614,
+      "highestPrice": 22708.329224,
+      "lowestPrice": 21945.02404,
+      "totalMatchVolume": 12478349,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-24T00:00:00",
+      "openPrice": 21801.904318,
+      "closePrice": 21945.02404,
+      "highestPrice": 22135.850336,
+      "lowestPrice": 21801.904318,
+      "totalMatchVolume": 10822075,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-25T00:00:00",
+      "openPrice": 21801.904318,
+      "closePrice": 21706.49117,
+      "highestPrice": 21849.610892,
+      "lowestPrice": 21515.664874,
+      "totalMatchVolume": 8308863,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-26T00:00:00",
+      "openPrice": 21658.784596,
+      "closePrice": 21706.49117,
+      "highestPrice": 21801.904318,
+      "lowestPrice": 21563.371448,
+      "totalMatchVolume": 6326136,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-29T00:00:00",
+      "openPrice": 21801.904318,
+      "closePrice": 21706.49117,
+      "highestPrice": 21897.317466,
+      "lowestPrice": 21706.49117,
+      "totalMatchVolume": 5202325,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-30T00:00:00",
+      "openPrice": 21658.784596,
+      "closePrice": 21897.317466,
+      "highestPrice": 21897.317466,
+      "lowestPrice": 21563.371448,
+      "totalMatchVolume": 6727083,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-07-31T00:00:00",
+      "openPrice": 21945.02404,
+      "closePrice": 22183.55691,
+      "highestPrice": 22278.970058,
+      "lowestPrice": 21897.317466,
+      "totalMatchVolume": 11007859,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-01T00:00:00",
+      "openPrice": 22135.850336,
+      "closePrice": 21945.02404,
+      "highestPrice": 22183.55691,
+      "lowestPrice": 21515.664874,
+      "totalMatchVolume": 11643253,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-02T00:00:00",
+      "openPrice": 21515.664874,
+      "closePrice": 22422.08978,
+      "highestPrice": 22422.08978,
+      "lowestPrice": 21515.664874,
+      "totalMatchVolume": 13703529,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-05T00:00:00",
+      "openPrice": 21945.02404,
+      "closePrice": 21277.132004,
+      "highestPrice": 21945.02404,
+      "lowestPrice": 21277.132004,
+      "totalMatchVolume": 16819189,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-06T00:00:00",
+      "openPrice": 21372.545152,
+      "closePrice": 21277.132004,
+      "highestPrice": 21563.371448,
+      "lowestPrice": 21038.599134,
+      "totalMatchVolume": 17675886,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-07T00:00:00",
+      "openPrice": 21372.545152,
+      "closePrice": 20800.066264,
+      "highestPrice": 21372.545152,
+      "lowestPrice": 20752.35969,
+      "totalMatchVolume": 19636192,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-08T00:00:00",
+      "openPrice": 20609.239968,
+      "closePrice": 19893.641358,
+      "highestPrice": 20656.946542,
+      "lowestPrice": 19798.22821,
+      "totalMatchVolume": 41073254,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-09T00:00:00",
+      "openPrice": 20036.76108,
+      "closePrice": 20132.174228,
+      "highestPrice": 20323.000524,
+      "lowestPrice": 20036.76108,
+      "totalMatchVolume": 14974409,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-12T00:00:00",
+      "openPrice": 20227.587376,
+      "closePrice": 20275.29395,
+      "highestPrice": 20275.29395,
+      "lowestPrice": 20036.76108,
+      "totalMatchVolume": 10353826,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-13T00:00:00",
+      "openPrice": 20227.587376,
+      "closePrice": 20036.76108,
+      "highestPrice": 20227.587376,
+      "lowestPrice": 19941.347932,
+      "totalMatchVolume": 11499009,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-14T00:00:00",
+      "openPrice": 20084.467654,
+      "closePrice": 20227.587376,
+      "highestPrice": 20323.000524,
+      "lowestPrice": 19941.347932,
+      "totalMatchVolume": 11839830,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-15T00:00:00",
+      "openPrice": 20227.587376,
+      "closePrice": 20179.880802,
+      "highestPrice": 20227.587376,
+      "lowestPrice": 19989.054506,
+      "totalMatchVolume": 9562517,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-16T00:00:00",
+      "openPrice": 20179.880802,
+      "closePrice": 20466.120246,
+      "highestPrice": 20561.533394,
+      "lowestPrice": 20084.467654,
+      "totalMatchVolume": 21424600,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-19T00:00:00",
+      "openPrice": 20561.533394,
+      "closePrice": 20895.479412,
+      "highestPrice": 20943.185986,
+      "lowestPrice": 20418.413672,
+      "totalMatchVolume": 15711012,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-20T00:00:00",
+      "openPrice": 20943.185986,
+      "closePrice": 20847.772838,
+      "highestPrice": 21038.599134,
+      "lowestPrice": 20800.066264,
+      "totalMatchVolume": 12418961,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-21T00:00:00",
+      "openPrice": 20704.653116,
+      "closePrice": 20990.89256,
+      "highestPrice": 21086.305708,
+      "lowestPrice": 20561.533394,
+      "totalMatchVolume": 20041089,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-22T00:00:00",
+      "openPrice": 20990.89256,
+      "closePrice": 21324.838578,
+      "highestPrice": 21611.078022,
+      "lowestPrice": 20990.89256,
+      "totalMatchVolume": 20787647,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-23T00:00:00",
+      "openPrice": 21324.838578,
+      "closePrice": 21372.545152,
+      "highestPrice": 21467.9583,
+      "lowestPrice": 21181.718856,
+      "totalMatchVolume": 11977375,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-26T00:00:00",
+      "openPrice": 21467.9583,
+      "closePrice": 21467.9583,
+      "highestPrice": 21611.078022,
+      "lowestPrice": 21372.545152,
+      "totalMatchVolume": 16946363,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-27T00:00:00",
+      "openPrice": 21467.9583,
+      "closePrice": 21611.078022,
+      "highestPrice": 21658.784596,
+      "lowestPrice": 21420.251726,
+      "totalMatchVolume": 15072855,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-28T00:00:00",
+      "openPrice": 21658.784596,
+      "closePrice": 21945.02404,
+      "highestPrice": 22088.143762,
+      "lowestPrice": 21563.371448,
+      "totalMatchVolume": 19151793,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-29T00:00:00",
+      "openPrice": 21945.02404,
+      "closePrice": 21945.02404,
+      "highestPrice": 22183.55691,
+      "lowestPrice": 21945.02404,
+      "totalMatchVolume": 16102717,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-08-30T00:00:00",
+      "openPrice": 21945.02404,
+      "closePrice": 22278.970058,
+      "highestPrice": 22278.970058,
+      "lowestPrice": 21945.02404,
+      "totalMatchVolume": 13280437,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-04T00:00:00",
+      "openPrice": 21992.730614,
+      "closePrice": 21945.02404,
+      "highestPrice": 22183.55691,
+      "lowestPrice": 21801.904318,
+      "totalMatchVolume": 13725792,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-05T00:00:00",
+      "openPrice": 21849.610892,
+      "closePrice": 21754.197744,
+      "highestPrice": 21992.730614,
+      "lowestPrice": 21658.784596,
+      "totalMatchVolume": 11380507,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-06T00:00:00",
+      "openPrice": 21754.197744,
+      "closePrice": 21754.197744,
+      "highestPrice": 21897.317466,
+      "lowestPrice": 21611.078022,
+      "totalMatchVolume": 12165338,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-09T00:00:00",
+      "openPrice": 21658.784596,
+      "closePrice": 21611.078022,
+      "highestPrice": 21801.904318,
+      "lowestPrice": 21563.371448,
+      "totalMatchVolume": 12274582,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-10T00:00:00",
+      "openPrice": 21658.784596,
+      "closePrice": 21229.42543,
+      "highestPrice": 21706.49117,
+      "lowestPrice": 21181.718856,
+      "totalMatchVolume": 14116274,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-11T00:00:00",
+      "openPrice": 21134.012282,
+      "closePrice": 21086.305708,
+      "highestPrice": 21229.42543,
+      "lowestPrice": 20943.185986,
+      "totalMatchVolume": 11249761,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-12T00:00:00",
+      "openPrice": 21277.132004,
+      "closePrice": 21277.132004,
+      "highestPrice": 21372.545152,
+      "lowestPrice": 21134.012282,
+      "totalMatchVolume": 9124443,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-13T00:00:00",
+      "openPrice": 21277.132004,
+      "closePrice": 21181.718856,
+      "highestPrice": 21324.838578,
+      "lowestPrice": 21134.012282,
+      "totalMatchVolume": 10106430,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-16T00:00:00",
+      "openPrice": 21181.718856,
+      "closePrice": 21181.718856,
+      "highestPrice": 21658.784596,
+      "lowestPrice": 21181.718856,
+      "totalMatchVolume": 11598745,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-17T00:00:00",
+      "openPrice": 21134.012282,
+      "closePrice": 21706.49117,
+      "highestPrice": 21706.49117,
+      "lowestPrice": 21134.012282,
+      "totalMatchVolume": 7240247,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-18T00:00:00",
+      "openPrice": 21706.49117,
+      "closePrice": 21945.02404,
+      "highestPrice": 22040.437188,
+      "lowestPrice": 21658.784596,
+      "totalMatchVolume": 15062112,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-19T00:00:00",
+      "openPrice": 22135.850336,
+      "closePrice": 22135.850336,
+      "highestPrice": 22135.850336,
+      "lowestPrice": 21849.610892,
+      "totalMatchVolume": 13437506,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-20T00:00:00",
+      "openPrice": 22231.263484,
+      "closePrice": 22469.796354,
+      "highestPrice": 22612.916076,
+      "lowestPrice": 22231.263484,
+      "totalMatchVolume": 30623690,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-23T00:00:00",
+      "openPrice": 22469.796354,
+      "closePrice": 22278.970058,
+      "highestPrice": 22660.62265,
+      "lowestPrice": 22278.970058,
+      "totalMatchVolume": 8237246,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-24T00:00:00",
+      "openPrice": 22231.263484,
+      "closePrice": 22469.796354,
+      "highestPrice": 22517.502928,
+      "lowestPrice": 22231.263484,
+      "totalMatchVolume": 11042954,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-25T00:00:00",
+      "openPrice": 22660.62265,
+      "closePrice": 22708.329224,
+      "highestPrice": 22851.448946,
+      "lowestPrice": 22517.502928,
+      "totalMatchVolume": 23434812,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-26T00:00:00",
+      "openPrice": 22708.329224,
+      "closePrice": 22994.568668,
+      "highestPrice": 23280.808112,
+      "lowestPrice": 22565.209502,
+      "totalMatchVolume": 26226987,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-27T00:00:00",
+      "openPrice": 23089.981816,
+      "closePrice": 23089.981816,
+      "highestPrice": 23233.101538,
+      "lowestPrice": 22946.862094,
+      "totalMatchVolume": 16815671,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-09-30T00:00:00",
+      "openPrice": 23042.275242,
+      "closePrice": 23089.981816,
+      "highestPrice": 23233.101538,
+      "lowestPrice": 22851.448946,
+      "totalMatchVolume": 21497874,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-01T00:00:00",
+      "openPrice": 23089.981816,
+      "closePrice": 23519.340982,
+      "highestPrice": 23662.460704,
+      "lowestPrice": 23042.275242,
+      "totalMatchVolume": 40743405,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-02T00:00:00",
+      "openPrice": 23423.927834,
+      "closePrice": 23757.873852,
+      "highestPrice": 23996.406722,
+      "lowestPrice": 23233.101538,
+      "totalMatchVolume": 28219803,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-03T00:00:00",
+      "openPrice": 23805.580426,
+      "closePrice": 23233.101538,
+      "highestPrice": 24044.113296,
+      "lowestPrice": 23233.101538,
+      "totalMatchVolume": 29764236,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-04T00:00:00",
+      "openPrice": 23233.101538,
+      "closePrice": 22946.862094,
+      "highestPrice": 23328.514686,
+      "lowestPrice": 22946.862094,
+      "totalMatchVolume": 21427781,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-07T00:00:00",
+      "openPrice": 23137.68839,
+      "closePrice": 23042.275242,
+      "highestPrice": 23233.101538,
+      "lowestPrice": 22899.15552,
+      "totalMatchVolume": 12848012,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-08T00:00:00",
+      "openPrice": 23089.981816,
+      "closePrice": 23280.808112,
+      "highestPrice": 23471.634408,
+      "lowestPrice": 23089.981816,
+      "totalMatchVolume": 16251986,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-09T00:00:00",
+      "openPrice": 23280.808112,
+      "closePrice": 23519.340982,
+      "highestPrice": 23614.75413,
+      "lowestPrice": 23185.394964,
+      "totalMatchVolume": 21680801,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-10T00:00:00",
+      "openPrice": 23757.873852,
+      "closePrice": 23423.927834,
+      "highestPrice": 23853.287,
+      "lowestPrice": 23423.927834,
+      "totalMatchVolume": 18252674,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-11T00:00:00",
+      "openPrice": 23423.927834,
+      "closePrice": 23328.514686,
+      "highestPrice": 23471.634408,
+      "lowestPrice": 23137.68839,
+      "totalMatchVolume": 13921063,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-14T00:00:00",
+      "openPrice": 23423.927834,
+      "closePrice": 23233.101538,
+      "highestPrice": 23471.634408,
+      "lowestPrice": 23233.101538,
+      "totalMatchVolume": 11949473,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-15T00:00:00",
+      "openPrice": 23233.101538,
+      "closePrice": 23137.68839,
+      "highestPrice": 23471.634408,
+      "lowestPrice": 23042.275242,
+      "totalMatchVolume": 14130784,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-16T00:00:00",
+      "openPrice": 23089.981816,
+      "closePrice": 23089.981816,
+      "highestPrice": 23185.394964,
+      "lowestPrice": 22994.568668,
+      "totalMatchVolume": 9022845,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-17T00:00:00",
+      "openPrice": 23089.981816,
+      "closePrice": 23233.101538,
+      "highestPrice": 23280.808112,
+      "lowestPrice": 22994.568668,
+      "totalMatchVolume": 9425005,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-18T00:00:00",
+      "openPrice": 23328.514686,
+      "closePrice": 23328.514686,
+      "highestPrice": 23662.460704,
+      "lowestPrice": 23280.808112,
+      "totalMatchVolume": 15422976,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-21T00:00:00",
+      "openPrice": 23328.514686,
+      "closePrice": 23042.275242,
+      "highestPrice": 23376.22126,
+      "lowestPrice": 22994.568668,
+      "totalMatchVolume": 9749437,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-22T00:00:00",
+      "openPrice": 23089.981816,
+      "closePrice": 23089.981816,
+      "highestPrice": 23280.808112,
+      "lowestPrice": 22899.15552,
+      "totalMatchVolume": 16885208,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-23T00:00:00",
+      "openPrice": 23089.981816,
+      "closePrice": 23089.981816,
+      "highestPrice": 23185.394964,
+      "lowestPrice": 22660.62265,
+      "totalMatchVolume": 16768636,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-24T00:00:00",
+      "openPrice": 23042.275242,
+      "closePrice": 22565.209502,
+      "highestPrice": 23089.981816,
+      "lowestPrice": 22469.796354,
+      "totalMatchVolume": 14262964,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-25T00:00:00",
+      "openPrice": 22660.62265,
+      "closePrice": 22422.08978,
+      "highestPrice": 22756.035798,
+      "lowestPrice": 22326.676632,
+      "totalMatchVolume": 14330195,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-28T00:00:00",
+      "openPrice": 22422.08978,
+      "closePrice": 22565.209502,
+      "highestPrice": 22612.916076,
+      "lowestPrice": 22374.383206,
+      "totalMatchVolume": 7022053,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-29T00:00:00",
+      "openPrice": 22612.916076,
+      "closePrice": 22660.62265,
+      "highestPrice": 22756.035798,
+      "lowestPrice": 22612.916076,
+      "totalMatchVolume": 6287797,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-30T00:00:00",
+      "openPrice": 22708.329224,
+      "closePrice": 22899.15552,
+      "highestPrice": 22899.15552,
+      "lowestPrice": 22660.62265,
+      "totalMatchVolume": 11088867,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-10-31T00:00:00",
+      "openPrice": 22899.15552,
+      "closePrice": 22803.742372,
+      "highestPrice": 22994.568668,
+      "lowestPrice": 22756.035798,
+      "totalMatchVolume": 8624235,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-01T00:00:00",
+      "openPrice": 22756.035798,
+      "closePrice": 22612.916076,
+      "highestPrice": 22899.15552,
+      "lowestPrice": 22612.916076,
+      "totalMatchVolume": 14553393,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-04T00:00:00",
+      "openPrice": 22660.62265,
+      "closePrice": 22374.383206,
+      "highestPrice": 22660.62265,
+      "lowestPrice": 22326.676632,
+      "totalMatchVolume": 13934054,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-05T00:00:00",
+      "openPrice": 22422.08978,
+      "closePrice": 22374.383206,
+      "highestPrice": 22565.209502,
+      "lowestPrice": 22374.383206,
+      "totalMatchVolume": 9924065,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-06T00:00:00",
+      "openPrice": 22517.502928,
+      "closePrice": 22803.742372,
+      "highestPrice": 22946.862094,
+      "lowestPrice": 22517.502928,
+      "totalMatchVolume": 15683373,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-07T00:00:00",
+      "openPrice": 23042.275242,
+      "closePrice": 22756.035798,
+      "highestPrice": 23042.275242,
+      "lowestPrice": 22756.035798,
+      "totalMatchVolume": 8604442,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-08T00:00:00",
+      "openPrice": 22899.15552,
+      "closePrice": 22517.502928,
+      "highestPrice": 22899.15552,
+      "lowestPrice": 22374.383206,
+      "totalMatchVolume": 13102508,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-11T00:00:00",
+      "openPrice": 22612.916076,
+      "closePrice": 22135.850336,
+      "highestPrice": 22612.916076,
+      "lowestPrice": 21992.730614,
+      "totalMatchVolume": 15364267,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-12T00:00:00",
+      "openPrice": 22326.676632,
+      "closePrice": 21992.730614,
+      "highestPrice": 22326.676632,
+      "lowestPrice": 21849.610892,
+      "totalMatchVolume": 12496159,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-13T00:00:00",
+      "openPrice": 21945.02404,
+      "closePrice": 22088.143762,
+      "highestPrice": 22088.143762,
+      "lowestPrice": 21658.784596,
+      "totalMatchVolume": 13329055,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-14T00:00:00",
+      "openPrice": 21945.02404,
+      "closePrice": 21754.197744,
+      "highestPrice": 21992.730614,
+      "lowestPrice": 21706.49117,
+      "totalMatchVolume": 7431590,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-15T00:00:00",
+      "openPrice": 21754.197744,
+      "closePrice": 21420.251726,
+      "highestPrice": 21754.197744,
+      "lowestPrice": 21372.545152,
+      "totalMatchVolume": 14457717,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-18T00:00:00",
+      "openPrice": 21372.545152,
+      "closePrice": 21420.251726,
+      "highestPrice": 21658.784596,
+      "lowestPrice": 21181.718856,
+      "totalMatchVolume": 12113846,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-19T00:00:00",
+      "openPrice": 21515.664874,
+      "closePrice": 21372.545152,
+      "highestPrice": 21515.664874,
+      "lowestPrice": 21181.718856,
+      "totalMatchVolume": 6938404,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-20T00:00:00",
+      "openPrice": 21277.132004,
+      "closePrice": 21801.904318,
+      "highestPrice": 21801.904318,
+      "lowestPrice": 21229.42543,
+      "totalMatchVolume": 10250924,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-21T00:00:00",
+      "openPrice": 21754.197744,
+      "closePrice": 22135.850336,
+      "highestPrice": 22135.850336,
+      "lowestPrice": 21563.371448,
+      "totalMatchVolume": 11215198,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-22T00:00:00",
+      "openPrice": 22135.850336,
+      "closePrice": 22422.08978,
+      "highestPrice": 22469.796354,
+      "lowestPrice": 22088.143762,
+      "totalMatchVolume": 14408768,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-25T00:00:00",
+      "openPrice": 22422.08978,
+      "closePrice": 22422.08978,
+      "highestPrice": 22517.502928,
+      "lowestPrice": 22326.676632,
+      "totalMatchVolume": 7189987,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-26T00:00:00",
+      "openPrice": 22422.08978,
+      "closePrice": 22469.796354,
+      "highestPrice": 22612.916076,
+      "lowestPrice": 22374.383206,
+      "totalMatchVolume": 6760139,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-27T00:00:00",
+      "openPrice": 22422.08978,
+      "closePrice": 22422.08978,
+      "highestPrice": 22517.502928,
+      "lowestPrice": 22278.970058,
+      "totalMatchVolume": 6390433,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-28T00:00:00",
+      "openPrice": 22565.209502,
+      "closePrice": 22517.502928,
+      "highestPrice": 22612.916076,
+      "lowestPrice": 22326.676632,
+      "totalMatchVolume": 8138330,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-11-29T00:00:00",
+      "openPrice": 22422.08978,
+      "closePrice": 22517.502928,
+      "highestPrice": 22517.502928,
+      "lowestPrice": 22278.970058,
+      "totalMatchVolume": 8449424,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-02T00:00:00",
+      "openPrice": 22612.916076,
+      "closePrice": 22565.209502,
+      "highestPrice": 22612.916076,
+      "lowestPrice": 22326.676632,
+      "totalMatchVolume": 6571784,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-03T00:00:00",
+      "openPrice": 22565.209502,
+      "closePrice": 22565.209502,
+      "highestPrice": 22660.62265,
+      "lowestPrice": 22374.383206,
+      "totalMatchVolume": 8334958,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-04T00:00:00",
+      "openPrice": 22374.383206,
+      "closePrice": 22374.383206,
+      "highestPrice": 22517.502928,
+      "lowestPrice": 22326.676632,
+      "totalMatchVolume": 8182047,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-05T00:00:00",
+      "openPrice": 22374.383206,
+      "closePrice": 23089.981816,
+      "highestPrice": 23089.981816,
+      "lowestPrice": 22278.970058,
+      "totalMatchVolume": 14192447,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-06T00:00:00",
+      "openPrice": 23089.981816,
+      "closePrice": 23042.275242,
+      "highestPrice": 23137.68839,
+      "lowestPrice": 22851.448946,
+      "totalMatchVolume": 10925374,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-09T00:00:00",
+      "openPrice": 22994.568668,
+      "closePrice": 23042.275242,
+      "highestPrice": 23185.394964,
+      "lowestPrice": 22851.448946,
+      "totalMatchVolume": 7600705,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-10T00:00:00",
+      "openPrice": 22946.862094,
+      "closePrice": 22946.862094,
+      "highestPrice": 23089.981816,
+      "lowestPrice": 22899.15552,
+      "totalMatchVolume": 7041729,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-11T00:00:00",
+      "openPrice": 22946.862094,
+      "closePrice": 23042.275242,
+      "highestPrice": 23185.394964,
+      "lowestPrice": 22899.15552,
+      "totalMatchVolume": 10344544,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-12T00:00:00",
+      "openPrice": 23089.981816,
+      "closePrice": 23137.68839,
+      "highestPrice": 23376.22126,
+      "lowestPrice": 23042.275242,
+      "totalMatchVolume": 18547474,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-13T00:00:00",
+      "openPrice": 23185.394964,
+      "closePrice": 23233.101538,
+      "highestPrice": 23423.927834,
+      "lowestPrice": 22994.568668,
+      "totalMatchVolume": 11023193,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-16T00:00:00",
+      "openPrice": 23185.394964,
+      "closePrice": 23185.394964,
+      "highestPrice": 23280.808112,
+      "lowestPrice": 22994.568668,
+      "totalMatchVolume": 6359244,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-17T00:00:00",
+      "openPrice": 23280.808112,
+      "closePrice": 23089.981816,
+      "highestPrice": 23280.808112,
+      "lowestPrice": 23042.275242,
+      "totalMatchVolume": 5388918,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-18T00:00:00",
+      "openPrice": 23137.68839,
+      "closePrice": 23089.981816,
+      "highestPrice": 23185.394964,
+      "lowestPrice": 22994.568668,
+      "totalMatchVolume": 5788184,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-19T00:00:00",
+      "openPrice": 22899.15552,
+      "closePrice": 22660.62265,
+      "highestPrice": 22946.862094,
+      "lowestPrice": 22660.62265,
+      "totalMatchVolume": 15033048,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-20T00:00:00",
+      "openPrice": 22756.035798,
+      "closePrice": 22708.329224,
+      "highestPrice": 22851.448946,
+      "lowestPrice": 22708.329224,
+      "totalMatchVolume": 4595681,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-23T00:00:00",
+      "openPrice": 22899.15552,
+      "closePrice": 22803.742372,
+      "highestPrice": 22946.862094,
+      "lowestPrice": 22708.329224,
+      "totalMatchVolume": 3210950,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-24T00:00:00",
+      "openPrice": 22946.862094,
+      "closePrice": 22899.15552,
+      "highestPrice": 22946.862094,
+      "lowestPrice": 22708.329224,
+      "totalMatchVolume": 5176984,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-25T00:00:00",
+      "openPrice": 22899.15552,
+      "closePrice": 23328.514686,
+      "highestPrice": 23757.873852,
+      "lowestPrice": 22851.448946,
+      "totalMatchVolume": 18375223,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-26T00:00:00",
+      "openPrice": 23376.22126,
+      "closePrice": 23233.101538,
+      "highestPrice": 23423.927834,
+      "lowestPrice": 23185.394964,
+      "totalMatchVolume": 5478381,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-27T00:00:00",
+      "openPrice": 23376.22126,
+      "closePrice": 23471.634408,
+      "highestPrice": 23757.873852,
+      "lowestPrice": 23328.514686,
+      "totalMatchVolume": 15399674,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-30T00:00:00",
+      "openPrice": 23614.75413,
+      "closePrice": 23280.808112,
+      "highestPrice": 23614.75413,
+      "lowestPrice": 23233.101538,
+      "totalMatchVolume": 10149321,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2024-12-31T00:00:00",
+      "openPrice": 23233.101538,
+      "closePrice": 23519.340982,
+      "highestPrice": 23519.340982,
+      "lowestPrice": 23233.101538,
+      "totalMatchVolume": 9406421,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-02T00:00:00",
+      "openPrice": 23519.340982,
+      "closePrice": 23233.101538,
+      "highestPrice": 23567.047556,
+      "lowestPrice": 23185.394964,
+      "totalMatchVolume": 7837356,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-03T00:00:00",
+      "openPrice": 23233.101538,
+      "closePrice": 22517.502928,
+      "highestPrice": 23233.101538,
+      "lowestPrice": 22517.502928,
+      "totalMatchVolume": 17431953,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-06T00:00:00",
+      "openPrice": 22517.502928,
+      "closePrice": 22517.502928,
+      "highestPrice": 22756.035798,
+      "lowestPrice": 22422.08978,
+      "totalMatchVolume": 8135904,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-07T00:00:00",
+      "openPrice": 22803.742372,
+      "closePrice": 22565.209502,
+      "highestPrice": 22803.742372,
+      "lowestPrice": 22469.796354,
+      "totalMatchVolume": 7617413,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-08T00:00:00",
+      "openPrice": 22708.329224,
+      "closePrice": 22851.448946,
+      "highestPrice": 23185.394964,
+      "lowestPrice": 22565.209502,
+      "totalMatchVolume": 11949407,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-09T00:00:00",
+      "openPrice": 22946.862094,
+      "closePrice": 22851.448946,
+      "highestPrice": 22946.862094,
+      "lowestPrice": 22660.62265,
+      "totalMatchVolume": 4711000,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-10T00:00:00",
+      "openPrice": 22899.15552,
+      "closePrice": 22326.676632,
+      "highestPrice": 22899.15552,
+      "lowestPrice": 22326.676632,
+      "totalMatchVolume": 6234699,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-13T00:00:00",
+      "openPrice": 22135.850336,
+      "closePrice": 22708.329224,
+      "highestPrice": 22708.329224,
+      "lowestPrice": 22088.143762,
+      "totalMatchVolume": 7942307,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-14T00:00:00",
+      "openPrice": 22469.796354,
+      "closePrice": 22517.502928,
+      "highestPrice": 22660.62265,
+      "lowestPrice": 22422.08978,
+      "totalMatchVolume": 4182199,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-15T00:00:00",
+      "openPrice": 22708.329224,
+      "closePrice": 22612.916076,
+      "highestPrice": 22803.742372,
+      "lowestPrice": 22565.209502,
+      "totalMatchVolume": 6721878,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-16T00:00:00",
+      "openPrice": 22756.035798,
+      "closePrice": 22756.035798,
+      "highestPrice": 22851.448946,
+      "lowestPrice": 22517.502928,
+      "totalMatchVolume": 8076279,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-17T00:00:00",
+      "openPrice": 22756.035798,
+      "closePrice": 23280.808112,
+      "highestPrice": 23280.808112,
+      "lowestPrice": 22660.62265,
+      "totalMatchVolume": 10018863,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-20T00:00:00",
+      "openPrice": 23280.808112,
+      "closePrice": 23280.808112,
+      "highestPrice": 23376.22126,
+      "lowestPrice": 23137.68839,
+      "totalMatchVolume": 5186505,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-21T00:00:00",
+      "openPrice": 23280.808112,
+      "closePrice": 23089.981816,
+      "highestPrice": 23376.22126,
+      "lowestPrice": 23042.275242,
+      "totalMatchVolume": 8130150,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-22T00:00:00",
+      "openPrice": 23328.514686,
+      "closePrice": 23089.981816,
+      "highestPrice": 23328.514686,
+      "lowestPrice": 23042.275242,
+      "totalMatchVolume": 7456929,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-23T00:00:00",
+      "openPrice": 23233.101538,
+      "closePrice": 23471.634408,
+      "highestPrice": 23710.167278,
+      "lowestPrice": 23137.68839,
+      "totalMatchVolume": 21074649,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-01-24T00:00:00",
+      "openPrice": 23662.460704,
+      "closePrice": 23614.75413,
+      "highestPrice": 23710.167278,
+      "lowestPrice": 23519.340982,
+      "totalMatchVolume": 10335094,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-03T00:00:00",
+      "openPrice": 23376.22126,
+      "closePrice": 23137.68839,
+      "highestPrice": 23567.047556,
+      "lowestPrice": 23137.68839,
+      "totalMatchVolume": 10890445,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-04T00:00:00",
+      "openPrice": 23233.101538,
+      "closePrice": 23519.340982,
+      "highestPrice": 23567.047556,
+      "lowestPrice": 23185.394964,
+      "totalMatchVolume": 12474459,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-05T00:00:00",
+      "openPrice": 23710.167278,
+      "closePrice": 23567.047556,
+      "highestPrice": 23757.873852,
+      "lowestPrice": 23423.927834,
+      "totalMatchVolume": 9434481,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-06T00:00:00",
+      "openPrice": 23757.873852,
+      "closePrice": 24044.113296,
+      "highestPrice": 24330.35274,
+      "lowestPrice": 23662.460704,
+      "totalMatchVolume": 37590102,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-07T00:00:00",
+      "openPrice": 24282.646166,
+      "closePrice": 24568.88561,
+      "highestPrice": 24616.592184,
+      "lowestPrice": 24044.113296,
+      "totalMatchVolume": 26592116,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-10T00:00:00",
+      "openPrice": 24568.88561,
+      "closePrice": 24568.88561,
+      "highestPrice": 25045.95135,
+      "lowestPrice": 24282.646166,
+      "totalMatchVolume": 22162122,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-11T00:00:00",
+      "openPrice": 24902.831628,
+      "closePrice": 24712.005332,
+      "highestPrice": 24950.538202,
+      "lowestPrice": 24568.88561,
+      "totalMatchVolume": 15672911,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-12T00:00:00",
+      "openPrice": 24807.41848,
+      "closePrice": 24521.179036,
+      "highestPrice": 24807.41848,
+      "lowestPrice": 24521.179036,
+      "totalMatchVolume": 11529344,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-13T00:00:00",
+      "openPrice": 24425.765888,
+      "closePrice": 24759.711906,
+      "highestPrice": 24807.41848,
+      "lowestPrice": 24378.059314,
+      "totalMatchVolume": 11957480,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-14T00:00:00",
+      "openPrice": 24902.831628,
+      "closePrice": 24807.41848,
+      "highestPrice": 24998.244776,
+      "lowestPrice": 24712.005332,
+      "totalMatchVolume": 10244176,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-17T00:00:00",
+      "openPrice": 24807.41848,
+      "closePrice": 24521.179036,
+      "highestPrice": 24902.831628,
+      "lowestPrice": 24521.179036,
+      "totalMatchVolume": 10977841,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-18T00:00:00",
+      "openPrice": 24521.179036,
+      "closePrice": 24664.298758,
+      "highestPrice": 24902.831628,
+      "lowestPrice": 24473.472462,
+      "totalMatchVolume": 10761082,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-19T00:00:00",
+      "openPrice": 24759.711906,
+      "closePrice": 24902.831628,
+      "highestPrice": 24950.538202,
+      "lowestPrice": 24616.592184,
+      "totalMatchVolume": 12942381,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-20T00:00:00",
+      "openPrice": 24998.244776,
+      "closePrice": 25332.190794,
+      "highestPrice": 25379.897368,
+      "lowestPrice": 24855.125054,
+      "totalMatchVolume": 21186034,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-21T00:00:00",
+      "openPrice": 25379.897368,
+      "closePrice": 25284.48422,
+      "highestPrice": 25379.897368,
+      "lowestPrice": 25189.071072,
+      "totalMatchVolume": 8805450,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-24T00:00:00",
+      "openPrice": 25189.071072,
+      "closePrice": 25284.48422,
+      "highestPrice": 25427.603942,
+      "lowestPrice": 25093.657924,
+      "totalMatchVolume": 11768135,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-25T00:00:00",
+      "openPrice": 25379.897368,
+      "closePrice": 25189.071072,
+      "highestPrice": 25570.723664,
+      "lowestPrice": 25141.364498,
+      "totalMatchVolume": 14503243,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-26T00:00:00",
+      "openPrice": 25189.071072,
+      "closePrice": 25093.657924,
+      "highestPrice": 25332.190794,
+      "lowestPrice": 25093.657924,
+      "totalMatchVolume": 9951628,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-27T00:00:00",
+      "openPrice": 25189.071072,
+      "closePrice": 25045.95135,
+      "highestPrice": 25189.071072,
+      "lowestPrice": 24807.41848,
+      "totalMatchVolume": 12511301,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-02-28T00:00:00",
+      "openPrice": 25045.95135,
+      "closePrice": 24902.831628,
+      "highestPrice": 25093.657924,
+      "lowestPrice": 24855.125054,
+      "totalMatchVolume": 12223720,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-03T00:00:00",
+      "openPrice": 24950.538202,
+      "closePrice": 24902.831628,
+      "highestPrice": 25093.657924,
+      "lowestPrice": 24855.125054,
+      "totalMatchVolume": 9363650,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-04T00:00:00",
+      "openPrice": 24902.831628,
+      "closePrice": 26238.6157,
+      "highestPrice": 26286.322274,
+      "lowestPrice": 24807.41848,
+      "totalMatchVolume": 40206252,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-05T00:00:00",
+      "openPrice": 26238.6157,
+      "closePrice": 26047.789404,
+      "highestPrice": 26334.028848,
+      "lowestPrice": 26047.789404,
+      "totalMatchVolume": 13275778,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-06T00:00:00",
+      "openPrice": 26190.909126,
+      "closePrice": 26429.441996,
+      "highestPrice": 26429.441996,
+      "lowestPrice": 26095.495978,
+      "totalMatchVolume": 12574405,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-07T00:00:00",
+      "openPrice": 26429.441996,
+      "closePrice": 26477.14857,
+      "highestPrice": 26620.268292,
+      "lowestPrice": 26190.909126,
+      "totalMatchVolume": 14928909,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-10T00:00:00",
+      "openPrice": 26477.14857,
+      "closePrice": 26524.855144,
+      "highestPrice": 27001.920884,
+      "lowestPrice": 26429.441996,
+      "totalMatchVolume": 13915695,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-11T00:00:00",
+      "openPrice": 26238.6157,
+      "closePrice": 26715.68144,
+      "highestPrice": 26715.68144,
+      "lowestPrice": 26190.909126,
+      "totalMatchVolume": 15318558,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-12T00:00:00",
+      "openPrice": 26811.094588,
+      "closePrice": 26572.561718,
+      "highestPrice": 26954.21431,
+      "lowestPrice": 26524.855144,
+      "totalMatchVolume": 10866364,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-13T00:00:00",
+      "openPrice": 26524.855144,
+      "closePrice": 26047.789404,
+      "highestPrice": 26524.855144,
+      "lowestPrice": 26000.08283,
+      "totalMatchVolume": 19002294,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-14T00:00:00",
+      "openPrice": 25856.963108,
+      "closePrice": 26047.789404,
+      "highestPrice": 26143.202552,
+      "lowestPrice": 25856.963108,
+      "totalMatchVolume": 10667101,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-17T00:00:00",
+      "openPrice": 26095.495978,
+      "closePrice": 26190.909126,
+      "highestPrice": 26190.909126,
+      "lowestPrice": 25904.669682,
+      "totalMatchVolume": 11005682,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-18T00:00:00",
+      "openPrice": 26238.6157,
+      "closePrice": 26143.202552,
+      "highestPrice": 26334.028848,
+      "lowestPrice": 26047.789404,
+      "totalMatchVolume": 7949801,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-19T00:00:00",
+      "openPrice": 26047.789404,
+      "closePrice": 26000.08283,
+      "highestPrice": 26095.495978,
+      "lowestPrice": 25904.669682,
+      "totalMatchVolume": 12087967,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-20T00:00:00",
+      "openPrice": 26238.6157,
+      "closePrice": 26190.909126,
+      "highestPrice": 26286.322274,
+      "lowestPrice": 25856.963108,
+      "totalMatchVolume": 14434800,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-21T00:00:00",
+      "openPrice": 26095.495978,
+      "closePrice": 26095.495978,
+      "highestPrice": 26286.322274,
+      "lowestPrice": 26047.789404,
+      "totalMatchVolume": 7451278,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-24T00:00:00",
+      "openPrice": 26095.495978,
+      "closePrice": 26715.68144,
+      "highestPrice": 26906.507736,
+      "lowestPrice": 25952.376256,
+      "totalMatchVolume": 21090187,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-25T00:00:00",
+      "openPrice": 26811.094588,
+      "closePrice": 26620.268292,
+      "highestPrice": 26906.507736,
+      "lowestPrice": 26572.561718,
+      "totalMatchVolume": 8136084,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-26T00:00:00",
+      "openPrice": 26620.268292,
+      "closePrice": 26715.68144,
+      "highestPrice": 27192.74718,
+      "lowestPrice": 26524.855144,
+      "totalMatchVolume": 24097001,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-27T00:00:00",
+      "openPrice": 26715.68144,
+      "closePrice": 26477.14857,
+      "highestPrice": 26858.801162,
+      "lowestPrice": 26477.14857,
+      "totalMatchVolume": 7523835,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-28T00:00:00",
+      "openPrice": 26477.14857,
+      "closePrice": 26286.322274,
+      "highestPrice": 26524.855144,
+      "lowestPrice": 26190.909126,
+      "totalMatchVolume": 12358157,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-03-31T00:00:00",
+      "openPrice": 26143.202552,
+      "closePrice": 26238.6157,
+      "highestPrice": 26238.6157,
+      "lowestPrice": 25952.376256,
+      "totalMatchVolume": 12987617,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-01T00:00:00",
+      "openPrice": 26238.6157,
+      "closePrice": 26667.974866,
+      "highestPrice": 26715.68144,
+      "lowestPrice": 26143.202552,
+      "totalMatchVolume": 9058233,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-02T00:00:00",
+      "openPrice": 26715.68144,
+      "closePrice": 26620.268292,
+      "highestPrice": 26858.801162,
+      "lowestPrice": 26572.561718,
+      "totalMatchVolume": 6672520,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-03T00:00:00",
+      "openPrice": 25713.843386,
+      "closePrice": 24759.711906,
+      "highestPrice": 25952.376256,
+      "lowestPrice": 24759.711906,
+      "totalMatchVolume": 58920033,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-04T00:00:00",
+      "openPrice": 23042.275242,
+      "closePrice": 24521.179036,
+      "highestPrice": 24568.88561,
+      "lowestPrice": 23042.275242,
+      "totalMatchVolume": 56807784,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-08T00:00:00",
+      "openPrice": 23853.287,
+      "closePrice": 22851.448946,
+      "highestPrice": 23853.287,
+      "lowestPrice": 22851.448946,
+      "totalMatchVolume": 33491013,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-09T00:00:00",
+      "openPrice": 21277.132004,
+      "closePrice": 22517.502928,
+      "highestPrice": 23757.873852,
+      "lowestPrice": 21277.132004,
+      "totalMatchVolume": 40806842,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-10T00:00:00",
+      "openPrice": 24091.81987,
+      "closePrice": 24091.81987,
+      "highestPrice": 24091.81987,
+      "lowestPrice": 24091.81987,
+      "totalMatchVolume": 1243616,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-11T00:00:00",
+      "openPrice": 25284.48422,
+      "closePrice": 25379.897368,
+      "highestPrice": 25379.897368,
+      "lowestPrice": 24425.765888,
+      "totalMatchVolume": 47954875,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-14T00:00:00",
+      "openPrice": 25379.897368,
+      "closePrice": 25332.190794,
+      "highestPrice": 25475.310516,
+      "lowestPrice": 24902.831628,
+      "totalMatchVolume": 19913686,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-15T00:00:00",
+      "openPrice": 24855.125054,
+      "closePrice": 24807.41848,
+      "highestPrice": 25141.364498,
+      "lowestPrice": 24616.592184,
+      "totalMatchVolume": 21194331,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-16T00:00:00",
+      "openPrice": 24950.538202,
+      "closePrice": 24616.592184,
+      "highestPrice": 25236.777646,
+      "lowestPrice": 24568.88561,
+      "totalMatchVolume": 18154970,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-17T00:00:00",
+      "openPrice": 24425.765888,
+      "closePrice": 24807.41848,
+      "highestPrice": 24807.41848,
+      "lowestPrice": 24378.059314,
+      "totalMatchVolume": 14263516,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-18T00:00:00",
+      "openPrice": 25284.48422,
+      "closePrice": 24807.41848,
+      "highestPrice": 25284.48422,
+      "lowestPrice": 24807.41848,
+      "totalMatchVolume": 16892645,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-21T00:00:00",
+      "openPrice": 24807.41848,
+      "closePrice": 24568.88561,
+      "highestPrice": 25093.657924,
+      "lowestPrice": 24425.765888,
+      "totalMatchVolume": 12199203,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-22T00:00:00",
+      "openPrice": 24091.81987,
+      "closePrice": 23996.406722,
+      "highestPrice": 24473.472462,
+      "lowestPrice": 22851.448946,
+      "totalMatchVolume": 29540146,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-23T00:00:00",
+      "openPrice": 24568.88561,
+      "closePrice": 24902.831628,
+      "highestPrice": 25093.657924,
+      "lowestPrice": 23996.406722,
+      "totalMatchVolume": 18237852,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-24T00:00:00",
+      "openPrice": 24807.41848,
+      "closePrice": 24568.88561,
+      "highestPrice": 24902.831628,
+      "lowestPrice": 24521.179036,
+      "totalMatchVolume": 8921844,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-25T00:00:00",
+      "openPrice": 24759.711906,
+      "closePrice": 24759.711906,
+      "highestPrice": 24855.125054,
+      "lowestPrice": 24234.939592,
+      "totalMatchVolume": 19496966,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-28T00:00:00",
+      "openPrice": 24807.41848,
+      "closePrice": 24807.41848,
+      "highestPrice": 24902.831628,
+      "lowestPrice": 24616.592184,
+      "totalMatchVolume": 11168206,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-04-29T00:00:00",
+      "openPrice": 24807.41848,
+      "closePrice": 25093.657924,
+      "highestPrice": 25379.897368,
+      "lowestPrice": 24807.41848,
+      "totalMatchVolume": 18142313,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-05T00:00:00",
+      "openPrice": 25427.603942,
+      "closePrice": 25284.48422,
+      "highestPrice": 25427.603942,
+      "lowestPrice": 24950.538202,
+      "totalMatchVolume": 9053520,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-06T00:00:00",
+      "openPrice": 25284.48422,
+      "closePrice": 25618.430238,
+      "highestPrice": 25952.376256,
+      "lowestPrice": 25189.071072,
+      "totalMatchVolume": 24416564,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-07T00:00:00",
+      "openPrice": 25618.430238,
+      "closePrice": 25761.54996,
+      "highestPrice": 25856.963108,
+      "lowestPrice": 25379.897368,
+      "totalMatchVolume": 13700056,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-08T00:00:00",
+      "openPrice": 25761.54996,
+      "closePrice": 26143.202552,
+      "highestPrice": 26190.909126,
+      "lowestPrice": 25618.430238,
+      "totalMatchVolume": 18389806,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-09T00:00:00",
+      "openPrice": 26047.789404,
+      "closePrice": 26334.028848,
+      "highestPrice": 26715.68144,
+      "lowestPrice": 26000.08283,
+      "totalMatchVolume": 18305109,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-12T00:00:00",
+      "openPrice": 26381.735422,
+      "closePrice": 28051.465512,
+      "highestPrice": 28099.172086,
+      "lowestPrice": 26334.028848,
+      "totalMatchVolume": 46721231,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-13T00:00:00",
+      "openPrice": 28146.87866,
+      "closePrice": 28051.465512,
+      "highestPrice": 28337.704956,
+      "lowestPrice": 27812.932642,
+      "totalMatchVolume": 13217335,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-14T00:00:00",
+      "openPrice": 28003.758938,
+      "closePrice": 28480.824678,
+      "highestPrice": 29101.01014,
+      "lowestPrice": 27956.052364,
+      "totalMatchVolume": 19738092,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-15T00:00:00",
+      "openPrice": 28528.531252,
+      "closePrice": 28528.531252,
+      "highestPrice": 28814.770696,
+      "lowestPrice": 28194.585234,
+      "totalMatchVolume": 17792339,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-16T00:00:00",
+      "openPrice": 28528.531252,
+      "closePrice": 28099.172086,
+      "highestPrice": 28528.531252,
+      "lowestPrice": 27908.34579,
+      "totalMatchVolume": 20039032,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-19T00:00:00",
+      "openPrice": 27860.639216,
+      "closePrice": 28146.87866,
+      "highestPrice": 28576.237826,
+      "lowestPrice": 27765.226068,
+      "totalMatchVolume": 20472429,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-20T00:00:00",
+      "openPrice": 28146.87866,
+      "closePrice": 29530.369306,
+      "highestPrice": 29673.489028,
+      "lowestPrice": 28146.87866,
+      "totalMatchVolume": 38206067,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-21T00:00:00",
+      "openPrice": 29578.07588,
+      "closePrice": 29482.662732,
+      "highestPrice": 29959.728472,
+      "lowestPrice": 29291.836436,
+      "totalMatchVolume": 19495842,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-22T00:00:00",
+      "openPrice": 29244.129862,
+      "closePrice": 29101.01014,
+      "highestPrice": 29768.902176,
+      "lowestPrice": 28910.183844,
+      "totalMatchVolume": 28010072,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-23T00:00:00",
+      "openPrice": 29148.716714,
+      "closePrice": 28767.064122,
+      "highestPrice": 29196.423288,
+      "lowestPrice": 28433.118104,
+      "totalMatchVolume": 17861747,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-26T00:00:00",
+      "openPrice": 28767.064122,
+      "closePrice": 28957.890418,
+      "highestPrice": 28957.890418,
+      "lowestPrice": 28146.87866,
+      "totalMatchVolume": 20234886,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-27T00:00:00",
+      "openPrice": 29196.423288,
+      "closePrice": 29196.423288,
+      "highestPrice": 29816.60875,
+      "lowestPrice": 28957.890418,
+      "totalMatchVolume": 23580179,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-28T00:00:00",
+      "openPrice": 29291.836436,
+      "closePrice": 29101.01014,
+      "highestPrice": 29387.249584,
+      "lowestPrice": 28862.47727,
+      "totalMatchVolume": 18575774,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-29T00:00:00",
+      "openPrice": 29101.01014,
+      "closePrice": 29387.249584,
+      "highestPrice": 29387.249584,
+      "lowestPrice": 28910.183844,
+      "totalMatchVolume": 14716595,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-05-30T00:00:00",
+      "openPrice": 29387.249584,
+      "closePrice": 29053.303566,
+      "highestPrice": 29387.249584,
+      "lowestPrice": 29053.303566,
+      "totalMatchVolume": 9983963,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-06-02T00:00:00",
+      "openPrice": 29005.596992,
+      "closePrice": 29434.956158,
+      "highestPrice": 29530.369306,
+      "lowestPrice": 28814.770696,
+      "totalMatchVolume": 13962518,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-06-03T00:00:00",
+      "openPrice": 29482.662732,
+      "closePrice": 30150.554768,
+      "highestPrice": 30436.794212,
+      "lowestPrice": 29482.662732,
+      "totalMatchVolume": 23869926,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-06-04T00:00:00",
+      "openPrice": 30245.967916,
+      "closePrice": 29912.021898,
+      "highestPrice": 30245.967916,
+      "lowestPrice": 29768.902176,
+      "totalMatchVolume": 15688990,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-06-05T00:00:00",
+      "openPrice": 29912.021898,
+      "closePrice": 29673.489028,
+      "highestPrice": 30150.554768,
+      "lowestPrice": 29625.782454,
+      "totalMatchVolume": 15794425,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-06-06T00:00:00",
+      "openPrice": 29578.07588,
+      "closePrice": 28910.183844,
+      "highestPrice": 29578.07588,
+      "lowestPrice": 28910.183844,
+      "totalMatchVolume": 28368360,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-06-09T00:00:00",
+      "openPrice": 28910.183844,
+      "closePrice": 28385.41153,
+      "highestPrice": 29053.303566,
+      "lowestPrice": 28385.41153,
+      "totalMatchVolume": 20761408,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-06-10T00:00:00",
+      "openPrice": 28576.237826,
+      "closePrice": 28671.650974,
+      "highestPrice": 29101.01014,
+      "lowestPrice": 28480.824678,
+      "totalMatchVolume": 15110402,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-06-11T00:00:00",
+      "openPrice": 28957.890418,
+      "closePrice": 28719.357548,
+      "highestPrice": 28957.890418,
+      "lowestPrice": 28576.237826,
+      "totalMatchVolume": 6095570,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    },
+    {
+      "tradingDate": "2025-06-12T00:00:00",
+      "openPrice": 28957.890418,
+      "closePrice": 29530.369306,
+      "highestPrice": 29721.195602,
+      "lowestPrice": 28862.47727,
+      "totalMatchVolume": 24558135,
+      "rateAdjusted": 0,
+      "openInterest": 0
+    }
+  ],
+  "packageId": null,
+  "status": "Success",
+  "errors": null
+}

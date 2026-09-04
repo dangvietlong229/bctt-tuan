@@ -1,0 +1,343 @@
+{
+  "page": 1,
+  "pageSize": 0,
+  "totalCount": 37,
+  "items": [
+    {
+      "alertId": 1,
+      "alertCode": "RevenueBreakoutQuarterly",
+      "alertName": "Bứt phá doanh thu (quý)",
+      "alertGroupCode": "Notification.Fundamental",
+      "alertGroupName": "Cơ bản",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 2,
+      "alertCode": "ProfitBreakoutQuarterly",
+      "alertName": "Bứt phá lợi nhuận (quý)",
+      "alertGroupCode": "Notification.Fundamental",
+      "alertGroupName": "Cơ bản",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 3,
+      "alertCode": "RevenueBreakoutYear",
+      "alertName": "Bứt phá doanh thu (năm)",
+      "alertGroupCode": "Notification.Fundamental",
+      "alertGroupName": "Cơ bản",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 4,
+      "alertCode": "ProfitBreakoutYear",
+      "alertName": "Bứt phá lợi nhuận (năm)",
+      "alertGroupCode": "Notification.Fundamental",
+      "alertGroupName": "Cơ bản",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 5,
+      "alertCode": "RevenueFallDownQuarterly",
+      "alertName": "Sụt giảm doanh thu (quý)",
+      "alertGroupCode": "Notification.Fundamental",
+      "alertGroupName": "Cơ bản",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 8,
+      "alertCode": "ProfitFallDownQuarterly",
+      "alertName": "Sụt giảm lợi nhuận (quý)",
+      "alertGroupCode": "Notification.Fundamental",
+      "alertGroupName": "Cơ bản",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 9,
+      "alertCode": "RevenueFallDownYear",
+      "alertName": "Sụt giảm doanh thu (năm)",
+      "alertGroupCode": "Notification.Fundamental",
+      "alertGroupName": "Cơ bản",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 10,
+      "alertCode": "ProfitFallDownYear",
+      "alertName": "Sụt giảm lợi nhuận (năm)",
+      "alertGroupCode": "Notification.Fundamental",
+      "alertGroupName": "Cơ bản",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 12,
+      "alertCode": "WatchoutQuarter",
+      "alertName": "Doanh nghiệp có tình hình tài chính cần chú ý (Đánh giá theo quý)",
+      "alertGroupCode": "Notification.Fundamental",
+      "alertGroupName": "Cơ bản",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 92,
+      "alertCode": "WatchoutYear",
+      "alertName": "Doanh nghiệp có tình hình tài chính cần chú ý (Đánh giá theo năm)",
+      "alertGroupCode": "Notification.Fundamental",
+      "alertGroupName": "Cơ bản",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 13,
+      "alertCode": "UpgradeScoringIndustry",
+      "alertName": "Cập nhật xếp hạng (theo ngành)",
+      "alertGroupCode": "Notification.Fundamental",
+      "alertGroupName": "Cơ bản",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 16,
+      "alertCode": "UpgradeScoringGroup",
+      "alertName": "Cập nhật xếp hạng (theo nhóm chỉ số)",
+      "alertGroupCode": "Notification.Fundamental",
+      "alertGroupName": "Cơ bản",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 21,
+      "alertCode": "CEFLAbnormality",
+      "alertName": "Mua trần/bán sàn đột biến",
+      "alertGroupCode": "Notification.TASignals",
+      "alertGroupName": "Tín hiệu kỹ thuật",
+      "subscribed": false,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 23,
+      "alertCode": "Cancelled",
+      "alertName": "Hủy lệnh",
+      "alertGroupCode": "Notification.TASignals",
+      "alertGroupName": "Tín hiệu kỹ thuật",
+      "subscribed": false,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 25,
+      "alertCode": "Pressing",
+      "alertName": "Đè giá/đẩy giá",
+      "alertGroupCode": "Notification.TASignals",
+      "alertGroupName": "Tín hiệu kỹ thuật",
+      "subscribed": false,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 27,
+      "alertCode": "Agressive",
+      "alertName": "Mua/bán chủ động",
+      "alertGroupCode": "Notification.TASignals",
+      "alertGroupName": "Tín hiệu kỹ thuật",
+      "subscribed": false,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 29,
+      "alertCode": "Closing",
+      "alertName": "Giao dịch đột biến cuối phiên",
+      "alertGroupCode": "Notification.TASignals",
+      "alertGroupName": "Tín hiệu kỹ thuật",
+      "subscribed": false,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 30,
+      "alertCode": "CashDividend",
+      "alertName": "Trả cổ tức tiền mặt",
+      "alertGroupCode": "Notification.Event",
+      "alertGroupName": "Sự kiện",
+      "subscribed": true,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 31,
+      "alertCode": "StockDividend",
+      "alertName": "Phát hành cổ phiếu",
+      "alertGroupCode": "Notification.Event",
+      "alertGroupName": "Sự kiện",
+      "subscribed": true,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 32,
+      "alertCode": "AccumulationBreak",
+      "alertName": "Tích lũy đà tăng",
+      "alertGroupCode": "Notification.TAStrategy",
+      "alertGroupName": "Chiến lược kỹ thuật",
+      "subscribed": true,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 36,
+      "alertCode": "BreakoutTop",
+      "alertName": "Vượt đỉnh",
+      "alertGroupCode": "Notification.TAStrategy",
+      "alertGroupName": "Chiến lược kỹ thuật",
+      "subscribed": true,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 37,
+      "alertCode": "BreakoutBottom",
+      "alertName": "Phá đáy",
+      "alertGroupCode": "Notification.TAStrategy",
+      "alertGroupName": "Chiến lược kỹ thuật",
+      "subscribed": false,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 38,
+      "alertCode": "VolumeIncreasePriceIncrease",
+      "alertName": "Khối lượng tăng và giá tăng",
+      "alertGroupCode": "Notification.PriceVolume",
+      "alertGroupName": "Phân tích giá và khối lượng",
+      "subscribed": true,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 39,
+      "alertCode": "VolumeIncreasePriceDecrease",
+      "alertName": "Khối lượng tăng và giá giảm",
+      "alertGroupCode": "Notification.PriceVolume",
+      "alertGroupName": "Phân tích giá và khối lượng",
+      "subscribed": false,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 40,
+      "alertCode": "PriceIncrease",
+      "alertName": "Giá tăng liên tiếp nhiều phiên",
+      "alertGroupCode": "Notification.PriceVolume",
+      "alertGroupName": "Phân tích giá và khối lượng",
+      "subscribed": false,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 41,
+      "alertCode": "PriceDecrease",
+      "alertName": "Giá giảm liên tiếp nhiều phiên",
+      "alertGroupCode": "Notification.PriceVolume",
+      "alertGroupName": "Phân tích giá và khối lượng",
+      "subscribed": false,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 42,
+      "alertCode": "VolumeIncrease",
+      "alertName": "Khối lượng tăng liên tiếp nhiều phiên",
+      "alertGroupCode": "Notification.PriceVolume",
+      "alertGroupName": "Phân tích giá và khối lượng",
+      "subscribed": false,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 88,
+      "alertCode": "BreakoutVolume",
+      "alertName": "Bứt phá khối lượng",
+      "alertGroupCode": "Notification.PriceVolume",
+      "alertGroupName": "Phân tích giá và khối lượng",
+      "subscribed": true,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 73,
+      "alertCode": "BreakoutShortermMa",
+      "alertName": "Cắt MA ngắn hạn",
+      "alertGroupCode": "Notification.TAStrategy",
+      "alertGroupName": "Chiến lược kỹ thuật",
+      "subscribed": true,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 75,
+      "alertCode": "BreakoutLongtermMa",
+      "alertName": "Cắt MA dài hạn",
+      "alertGroupCode": "Notification.TAStrategy",
+      "alertGroupName": "Chiến lược kỹ thuật",
+      "subscribed": true,
+      "groupSubscribed": false
+    },
+    {
+      "alertId": 77,
+      "alertCode": "CorporateEarning",
+      "alertName": "Kết quả kinh doanh",
+      "alertGroupCode": "Notification.Event",
+      "alertGroupName": "Sự kiện",
+      "subscribed": true,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 79,
+      "alertCode": "CorporateListing",
+      "alertName": "Niêm yết",
+      "alertGroupCode": "Notification.Event",
+      "alertGroupName": "Sự kiện",
+      "subscribed": true,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 80,
+      "alertCode": "CorporateAgm",
+      "alertName": "Đại hội cổ đông",
+      "alertGroupCode": "Notification.Event",
+      "alertGroupName": "Sự kiện",
+      "subscribed": true,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 81,
+      "alertCode": "Economy",
+      "alertName": "Sự kiện vĩ mô",
+      "alertGroupCode": "Notification.Event",
+      "alertGroupName": "Sự kiện",
+      "subscribed": true,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 82,
+      "alertCode": "PersonTransaction",
+      "alertName": "Giao dịch của người nội bộ",
+      "alertGroupCode": "Notification.Event",
+      "alertGroupName": "Sự kiện",
+      "subscribed": true,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 87,
+      "alertCode": "CorporateTransaction",
+      "alertName": "Giao dịch của tổ chức",
+      "alertGroupCode": "Notification.Event",
+      "alertGroupName": "Sự kiện",
+      "subscribed": true,
+      "groupSubscribed": true
+    },
+    {
+      "alertId": 84,
+      "alertCode": "Corporate_IPO",
+      "alertName": "Phát hành IPO",
+      "alertGroupCode": "Notification.Event",
+      "alertGroupName": "Sự kiện",
+      "subscribed": true,
+      "groupSubscribed": true
+    }
+  ],
+  "packageId": null,
+  "status": "Success",
+  "errors": null
+}

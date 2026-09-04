@@ -1,0 +1,1298 @@
+[
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/GetAllChartEconomy",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "GetAllChartEconomy"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/GetAllCompanyGroup",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "GetAllCompanyGroup"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/GetAllCoveredWarrants",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "GetAllCoveredWarrants"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/GetAllDerivatives",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "GetAllDerivatives"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/GetAllDerivativesForChart",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "GetAllDerivativesForChart"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/GetAllIcbIndustry",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "GetAllIcbIndustry"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/GetGuestSettings",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "GetGuestSettings"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/GetListOrganization",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "GetListOrganization"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/getOrganCodeTickersByComGroup",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "getOrganCodeTickersByComGroup"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/GetOrganCodeTickersByComGroup",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "GetOrganCodeTickersByComGroup"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/getOrganCodeTickersByIcbCode",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "getOrganCodeTickersByIcbCode"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/GetSharedChartLayout",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "GetSharedChartLayout"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/Master/GetTimeOffset",
+    "base": "https://core.fiintrade.vn/Master/",
+    "method": "GetTimeOffset"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/AppendTickerToWatchList",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "AppendTickerToWatchList"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/CreateChartlayout",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "CreateChartlayout"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/CreateScreener",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "CreateScreener"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/DeleteChartLayout",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "DeleteChartLayout"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/DeleteScreener",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "DeleteScreener"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/DeleteWatchList",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "DeleteWatchList"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/DeleteWorkspace",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "DeleteWorkspace"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/UserSetting/GetChangeLogs",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "GetChangeLogs"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/UserSetting/GetChangeLogsV3",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "GetChangeLogsV3"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/UserSetting/GetChartLayouts",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "GetChartLayouts"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/GetChartLayoutShareInfo",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "GetChartLayoutShareInfo"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/UserSetting/GetScreeners",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "GetScreeners"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/UserSetting/GetTickersByWatchList",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "GetTickersByWatchList"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/UserSetting/getTopScreeners",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "getTopScreeners"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/UserSetting/GetUserSettings",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "GetUserSettings"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/UserSetting/GetUserWatchList",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "GetUserWatchList"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/UserSetting/GetWorkspace",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "GetWorkspace"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/NewWatchList",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "NewWatchList"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/NewWorkspace",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "NewWorkspace"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/RenameWatchList",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "RenameWatchList"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/UpdateChartLayout",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "UpdateChartLayout"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/UpdateScreener",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "UpdateScreener"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/UpdateUserSettings",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "UpdateUserSettings"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/UpdateWatchList",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "UpdateWatchList"
+  },
+  {
+    "verb": "POST",
+    "url": "https://core.fiintrade.vn/UserSetting/UpdateWorkspace",
+    "base": "https://core.fiintrade.vn/UserSetting/",
+    "method": "UpdateWorkspace"
+  },
+  {
+    "verb": "GET",
+    "url": "https://core.fiintrade.vn/UtilFeature/GetHotNews",
+    "base": "https://core.fiintrade.vn/UtilFeature/",
+    "method": "GetHotNews"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/CashDividendAnalysis/DownloadAnalysis",
+    "base": "https://fundamental.fiintrade.vn/CashDividendAnalysis/",
+    "method": "DownloadAnalysis"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/CashDividendAnalysis/GetAnalysis",
+    "base": "https://fundamental.fiintrade.vn/CashDividendAnalysis/",
+    "method": "GetAnalysis"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/ConsensusAnalysis/GetConsensus",
+    "base": "https://fundamental.fiintrade.vn/ConsensusAnalysis/",
+    "method": "GetConsensus"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/EarningCorner/GetIndicators",
+    "base": "https://fundamental.fiintrade.vn/EarningCorner/",
+    "method": "GetIndicators"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/EarningCorner/GetMinmaxTable",
+    "base": "https://fundamental.fiintrade.vn/EarningCorner/",
+    "method": "GetMinmaxTable"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/EarningCorner/ProfitDisclosureOverview",
+    "base": "https://fundamental.fiintrade.vn/EarningCorner/",
+    "method": "ProfitDisclosureOverview"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/EarningCorner/ProfitDisclosureOverviewExport",
+    "base": "https://fundamental.fiintrade.vn/EarningCorner/",
+    "method": "ProfitDisclosureOverviewExport"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/EarningCorner/ProfitGrowthChartOverview",
+    "base": "https://fundamental.fiintrade.vn/EarningCorner/",
+    "method": "ProfitGrowthChartOverview"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/EarningCorner/ProfitGrowthDetail",
+    "base": "https://fundamental.fiintrade.vn/EarningCorner/",
+    "method": "ProfitGrowthDetail"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/EarningCorner/ProfitGrowthDetailExport",
+    "base": "https://fundamental.fiintrade.vn/EarningCorner/",
+    "method": "ProfitGrowthDetailExport"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/EarningCorner/ProfitGrowthOverview",
+    "base": "https://fundamental.fiintrade.vn/EarningCorner/",
+    "method": "ProfitGrowthOverview"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/EarningCorner/ProfitGrowthOverviewExport",
+    "base": "https://fundamental.fiintrade.vn/EarningCorner/",
+    "method": "ProfitGrowthOverviewExport"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/FinancialAnalysis/DownloadFinancialRatio2",
+    "base": "https://fundamental.fiintrade.vn/FinancialAnalysis/",
+    "method": "DownloadFinancialRatio2"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/FinancialAnalysis/GetCheckup",
+    "base": "https://fundamental.fiintrade.vn/FinancialAnalysis/",
+    "method": "GetCheckup"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/FinancialAnalysis/GetFinancialRatioV2",
+    "base": "https://fundamental.fiintrade.vn/FinancialAnalysis/",
+    "method": "GetFinancialRatioV2"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/FinancialAnalysis/GetZMFScore",
+    "base": "https://fundamental.fiintrade.vn/FinancialAnalysis/",
+    "method": "GetZMFScore"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/FinancialStatement/DownloadBalanceSheet",
+    "base": "https://fundamental.fiintrade.vn/FinancialStatement/",
+    "method": "DownloadBalanceSheet"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/FinancialStatement/DownloadCashFlow",
+    "base": "https://fundamental.fiintrade.vn/FinancialStatement/",
+    "method": "DownloadCashFlow"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/FinancialStatement/DownloadIncomeStatement",
+    "base": "https://fundamental.fiintrade.vn/FinancialStatement/",
+    "method": "DownloadIncomeStatement"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/FinancialStatement/GetBalanceSheet",
+    "base": "https://fundamental.fiintrade.vn/FinancialStatement/",
+    "method": "GetBalanceSheet"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/FinancialStatement/GetCashFlow",
+    "base": "https://fundamental.fiintrade.vn/FinancialStatement/",
+    "method": "GetCashFlow"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/FinancialStatement/GetFinancialRatio",
+    "base": "https://fundamental.fiintrade.vn/FinancialStatement/",
+    "method": "GetFinancialRatio"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/FinancialStatement/GetFinancialReports",
+    "base": "https://fundamental.fiintrade.vn/FinancialStatement/",
+    "method": "GetFinancialReports"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/FinancialStatement/GetIncomeStatement",
+    "base": "https://fundamental.fiintrade.vn/FinancialStatement/",
+    "method": "GetIncomeStatement"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/Ownership/DownloadBoardOfDirector",
+    "base": "https://fundamental.fiintrade.vn/Ownership/",
+    "method": "DownloadBoardOfDirector"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/Ownership/DownloadMajorShareHolder",
+    "base": "https://fundamental.fiintrade.vn/Ownership/",
+    "method": "DownloadMajorShareHolder"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/Ownership/GetBoDTooltip",
+    "base": "https://fundamental.fiintrade.vn/Ownership/",
+    "method": "GetBoDTooltip"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/Ownership/GetOwnership",
+    "base": "https://fundamental.fiintrade.vn/Ownership/",
+    "method": "GetOwnership"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/Ownership/GetShareHolderTooltip",
+    "base": "https://fundamental.fiintrade.vn/Ownership/",
+    "method": "GetShareHolderTooltip"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/Snapshot/GetCompanyScore",
+    "base": "https://fundamental.fiintrade.vn/Snapshot/",
+    "method": "GetCompanyScore"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/Snapshot/GetSnapshot",
+    "base": "https://fundamental.fiintrade.vn/Snapshot/",
+    "method": "GetSnapshot"
+  },
+  {
+    "verb": "GET",
+    "url": "https://fundamental.fiintrade.vn/Snapshot/GetSnapshotNoneBank",
+    "base": "https://fundamental.fiintrade.vn/Snapshot/",
+    "method": "GetSnapshotNoneBank"
+  },
+  {
+    "verb": "POST",
+    "url": "https://market.fiintrade.vn/BUSD/DeleteTemplateBUSD",
+    "base": "https://market.fiintrade.vn/BUSD/",
+    "method": "DeleteTemplateBUSD"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/BUSD/GetBUSD",
+    "base": "https://market.fiintrade.vn/BUSD/",
+    "method": "GetBUSD"
+  },
+  {
+    "verb": "POST",
+    "url": "https://market.fiintrade.vn/BUSD/GetBUSDByOrganCodes",
+    "base": "https://market.fiintrade.vn/BUSD/",
+    "method": "GetBUSDByOrganCodes"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/BUSD/getListTemplateBUSDByUser",
+    "base": "https://market.fiintrade.vn/BUSD/",
+    "method": "getListTemplateBUSDByUser"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/BUSD/GetTemplateBUSDByID",
+    "base": "https://market.fiintrade.vn/BUSD/",
+    "method": "GetTemplateBUSDByID"
+  },
+  {
+    "verb": "POST",
+    "url": "https://market.fiintrade.vn/BUSD/InsertOrUpdateTemplateBUSD",
+    "base": "https://market.fiintrade.vn/BUSD/",
+    "method": "InsertOrUpdateTemplateBUSD"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/DownloadCorporateAGM",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "DownloadCorporateAGM"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/DownloadCorporateDividend",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "DownloadCorporateDividend"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/DownloadCorporateEarning",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "DownloadCorporateEarning"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/DownloadCorporateListing",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "DownloadCorporateListing"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/DownloadCorporateShareIssuance",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "DownloadCorporateShareIssuance"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/GetCalendarWatchList",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "GetCalendarWatchList"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/GetCorporateAGM",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "GetCorporateAGM"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/GetCorporateCashDividend",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "GetCorporateCashDividend"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/GetCorporateEarning",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "GetCorporateEarning"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/GetCorporateIPO",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "GetCorporateIPO"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/GetCorporateListing",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "GetCorporateListing"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/GetCorporateShareIssuance",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "GetCorporateShareIssuance"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/GetCorporateStockDividend",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "GetCorporateStockDividend"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Calendar/GetEconomy",
+    "base": "https://market.fiintrade.vn/Calendar/",
+    "method": "GetEconomy"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/Chart/Get6MonthsCandleStickChartImage",
+    "base": "https://market.fiintrade.vn/Chart/",
+    "method": "Get6MonthsCandleStickChartImage"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/CoveredWarrant/GetCoveredWarrantOverview",
+    "base": "https://market.fiintrade.vn/CoveredWarrant/",
+    "method": "GetCoveredWarrantOverview"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/HeatMap/GetHeatMap",
+    "base": "https://market.fiintrade.vn/HeatMap/",
+    "method": "GetHeatMap"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/ExportMarketSpreadAnalysisHeatMatrix",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "ExportMarketSpreadAnalysisHeatMatrix"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/ExportMarketSpreadAnalysisHeatMatrixDetail",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "ExportMarketSpreadAnalysisHeatMatrixDetail"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/ExportMarketSpreadAnalysisHeatMatrixTimeSeriesView",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "ExportMarketSpreadAnalysisHeatMatrixTimeSeriesView"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetComGroupBuSdChart",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetComGroupBuSdChart"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetIndexSeries",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetIndexSeries"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetLatestIndices",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetLatestIndices"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetLiquiditySeries",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetLiquiditySeries"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetMarketAnomaly",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetMarketAnomaly"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetMarketSpreadAnalysisHeatMatrix",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetMarketSpreadAnalysisHeatMatrix"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetMarketSpreadAnalysisHeatMatrixDetail",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetMarketSpreadAnalysisHeatMatrixDetail"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetMarketSpreadAnalysisHeatMatrixDetailChart",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetMarketSpreadAnalysisHeatMatrixDetailChart"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetMarketSpreadAnalysisHeatMatrixDetailChartV2",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetMarketSpreadAnalysisHeatMatrixDetailChartV2"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetMarketSpreadAnalysisHeatMatrixTimeSeriesView",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetMarketSpreadAnalysisHeatMatrixTimeSeriesView"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetMarketSpreadAnalysisHeatMatrixTimeSeriesViewV2",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetMarketSpreadAnalysisHeatMatrixTimeSeriesViewV2"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetMarketSpreadAnalysisHeatMatrixV2",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetMarketSpreadAnalysisHeatMatrixV2"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetMarketSpreadAnalysisIndicators",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetMarketSpreadAnalysisIndicators"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetProspect",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetProspect"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetValuationSeries",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetValuationSeries"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MarketInDepth/GetValuationSeriesV2",
+    "base": "https://market.fiintrade.vn/MarketInDepth/",
+    "method": "GetValuationSeriesV2"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MoneyFlow/GetContribution",
+    "base": "https://market.fiintrade.vn/MoneyFlow/",
+    "method": "GetContribution"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MoneyFlow/GetForeign",
+    "base": "https://market.fiintrade.vn/MoneyFlow/",
+    "method": "GetForeign"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MoneyFlow/GetProprietaryV2",
+    "base": "https://market.fiintrade.vn/MoneyFlow/",
+    "method": "GetProprietaryV2"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MoneyFlow/GetStatisticInvestor",
+    "base": "https://market.fiintrade.vn/MoneyFlow/",
+    "method": "GetStatisticInvestor"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/MoneyFlow/GetStatisticInvestorChart",
+    "base": "https://market.fiintrade.vn/MoneyFlow/",
+    "method": "GetStatisticInvestorChart"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/DownloadSectorPerformance",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "DownloadSectorPerformance"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/DownloadSectorProportion",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "DownloadSectorProportion"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/DownloadSectorRatio",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "DownloadSectorRatio"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/DownloadSectorStatisticByInvestor",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "DownloadSectorStatisticByInvestor"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/GetLatestSector",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "GetLatestSector"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/GetSectorFMI",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "GetSectorFMI"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/GetSectorLiquidityValueContribution",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "GetSectorLiquidityValueContribution"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/GetSectorPerformance",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "GetSectorPerformance"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/GetSectorProportionSummary",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "GetSectorProportionSummary"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/GetSectorRatio",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "GetSectorRatio"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/GetSectorSeries",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "GetSectorSeries"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/GetSectorStatisticbyInvestor",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "GetSectorStatisticbyInvestor"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SectorIndepth/GetSectorStatisticbyInvestorChart",
+    "base": "https://market.fiintrade.vn/SectorIndepth/",
+    "method": "GetSectorStatisticbyInvestorChart"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SMA/ExportSMAStock",
+    "base": "https://market.fiintrade.vn/SMA/",
+    "method": "ExportSMAStock"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SMA/GetSMAIndex",
+    "base": "https://market.fiintrade.vn/SMA/",
+    "method": "GetSMAIndex"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/SMA/GetSMAStock",
+    "base": "https://market.fiintrade.vn/SMA/",
+    "method": "GetSMAStock"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/TopMover/Get6MonthsCandleStickChartImage",
+    "base": "https://market.fiintrade.vn/TopMover/",
+    "method": "Get6MonthsCandleStickChartImage"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/TopMover/GetTopBreakout",
+    "base": "https://market.fiintrade.vn/TopMover/",
+    "method": "GetTopBreakout"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/TopMover/GetTopBreakoutCW",
+    "base": "https://market.fiintrade.vn/TopMover/",
+    "method": "GetTopBreakoutCW"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/TopMover/GetTopForeignTrading",
+    "base": "https://market.fiintrade.vn/TopMover/",
+    "method": "GetTopForeignTrading"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/TopMover/GetTopGainers",
+    "base": "https://market.fiintrade.vn/TopMover/",
+    "method": "GetTopGainers"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/TopMover/GetTopLosers",
+    "base": "https://market.fiintrade.vn/TopMover/",
+    "method": "GetTopLosers"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/TopMover/GetTopNewHigh",
+    "base": "https://market.fiintrade.vn/TopMover/",
+    "method": "GetTopNewHigh"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/TopMover/GetTopNewLow",
+    "base": "https://market.fiintrade.vn/TopMover/",
+    "method": "GetTopNewLow"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/TopMover/GetTopValue",
+    "base": "https://market.fiintrade.vn/TopMover/",
+    "method": "GetTopValue"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/TopMover/GetTopVolume",
+    "base": "https://market.fiintrade.vn/TopMover/",
+    "method": "GetTopVolume"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/WatchList/DownloadWatchListNews",
+    "base": "https://market.fiintrade.vn/WatchList/",
+    "method": "DownloadWatchListNews"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/WatchList/DownloadWatchListSummary",
+    "base": "https://market.fiintrade.vn/WatchList/",
+    "method": "DownloadWatchListSummary"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/WatchList/GetBonds",
+    "base": "https://market.fiintrade.vn/WatchList/",
+    "method": "GetBonds"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/WatchList/GetCoveredWarrants",
+    "base": "https://market.fiintrade.vn/WatchList/",
+    "method": "GetCoveredWarrants"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/WatchList/GetCWWatchList",
+    "base": "https://market.fiintrade.vn/WatchList/",
+    "method": "GetCWWatchList"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/WatchList/getDerivatives",
+    "base": "https://market.fiintrade.vn/WatchList/",
+    "method": "getDerivatives"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/WatchList/GetPutThrough",
+    "base": "https://market.fiintrade.vn/WatchList/",
+    "method": "GetPutThrough"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/WatchList/GetTickerSeries",
+    "base": "https://market.fiintrade.vn/WatchList/",
+    "method": "GetTickerSeries"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/WatchList/GetTickerSummary",
+    "base": "https://market.fiintrade.vn/WatchList/",
+    "method": "GetTickerSummary"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/WatchList/GetTwoDaysSeries",
+    "base": "https://market.fiintrade.vn/WatchList/",
+    "method": "GetTwoDaysSeries"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/WatchList/GetWatchListNews",
+    "base": "https://market.fiintrade.vn/WatchList/",
+    "method": "GetWatchListNews"
+  },
+  {
+    "verb": "GET",
+    "url": "https://market.fiintrade.vn/WatchList/GetWatchListSummary",
+    "base": "https://market.fiintrade.vn/WatchList/",
+    "method": "GetWatchListSummary"
+  },
+  {
+    "verb": "GET",
+    "url": "https://news.fiintrade.vn/News/GetAggregatorNews",
+    "base": "https://news.fiintrade.vn/News/",
+    "method": "GetAggregatorNews"
+  },
+  {
+    "verb": "GET",
+    "url": "https://news.fiintrade.vn/News/GetAutoNews",
+    "base": "https://news.fiintrade.vn/News/",
+    "method": "GetAutoNews"
+  },
+  {
+    "verb": "GET",
+    "url": "https://news.fiintrade.vn/News/GetContributor",
+    "base": "https://news.fiintrade.vn/News/",
+    "method": "GetContributor"
+  },
+  {
+    "verb": "GET",
+    "url": "https://news.fiintrade.vn/News/GetMostPopular",
+    "base": "https://news.fiintrade.vn/News/",
+    "method": "GetMostPopular"
+  },
+  {
+    "verb": "GET",
+    "url": "https://news.fiintrade.vn/News/GetMostRecent",
+    "base": "https://news.fiintrade.vn/News/",
+    "method": "GetMostRecent"
+  },
+  {
+    "verb": "GET",
+    "url": "https://news.fiintrade.vn/News/GetNewFullContent",
+    "base": "https://news.fiintrade.vn/News/",
+    "method": "GetNewFullContent"
+  },
+  {
+    "verb": "GET",
+    "url": "https://news.fiintrade.vn/News/GetNewsByExpert",
+    "base": "https://news.fiintrade.vn/News/",
+    "method": "GetNewsByExpert"
+  },
+  {
+    "verb": "GET",
+    "url": "https://news.fiintrade.vn/News/GetPremiumAnalysis",
+    "base": "https://news.fiintrade.vn/News/",
+    "method": "GetPremiumAnalysis"
+  },
+  {
+    "verb": "GET",
+    "url": "https://news.fiintrade.vn/News/GetRumors",
+    "base": "https://news.fiintrade.vn/News/",
+    "method": "GetRumors"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Rankings/DownloadAllScore",
+    "base": "https://strategy.fiintrade.vn/Rankings/",
+    "method": "DownloadAllScore"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Rankings/DownloadIndicators",
+    "base": "https://strategy.fiintrade.vn/Rankings/",
+    "method": "DownloadIndicators"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Rankings/DownloadRanking",
+    "base": "https://strategy.fiintrade.vn/Rankings/",
+    "method": "DownloadRanking"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Rankings/GetAccumulation",
+    "base": "https://strategy.fiintrade.vn/Rankings/",
+    "method": "GetAccumulation"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Rankings/GetAllScore",
+    "base": "https://strategy.fiintrade.vn/Rankings/",
+    "method": "GetAllScore"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Rankings/GetRanking",
+    "base": "https://strategy.fiintrade.vn/Rankings/",
+    "method": "GetRanking"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Rankings/GetRateIndicator",
+    "base": "https://strategy.fiintrade.vn/Rankings/",
+    "method": "GetRateIndicator"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Strategy/DownloadCanSlim",
+    "base": "https://strategy.fiintrade.vn/Strategy/",
+    "method": "DownloadCanSlim"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Strategy/DownloadScore",
+    "base": "https://strategy.fiintrade.vn/Strategy/",
+    "method": "DownloadScore"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Strategy/GetCanSlim",
+    "base": "https://strategy.fiintrade.vn/Strategy/",
+    "method": "GetCanSlim"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Strategy/GetGrowth",
+    "base": "https://strategy.fiintrade.vn/Strategy/",
+    "method": "GetGrowth"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Strategy/GetLeaders",
+    "base": "https://strategy.fiintrade.vn/Strategy/",
+    "method": "GetLeaders"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Strategy/GetMomentum",
+    "base": "https://strategy.fiintrade.vn/Strategy/",
+    "method": "GetMomentum"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Strategy/GetOverView",
+    "base": "https://strategy.fiintrade.vn/Strategy/",
+    "method": "GetOverView"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Strategy/GetValue",
+    "base": "https://strategy.fiintrade.vn/Strategy/",
+    "method": "GetValue"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Strategy/GetValueInvestment",
+    "base": "https://strategy.fiintrade.vn/Strategy/",
+    "method": "GetValueInvestment"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/Strategy/GetVGM",
+    "base": "https://strategy.fiintrade.vn/Strategy/",
+    "method": "GetVGM"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/TAStrategy/DownloadAccumulation",
+    "base": "https://strategy.fiintrade.vn/TAStrategy/",
+    "method": "DownloadAccumulation"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/TAStrategy/DownloadBreakout",
+    "base": "https://strategy.fiintrade.vn/TAStrategy/",
+    "method": "DownloadBreakout"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/TAStrategy/DownloadBreakoutMa",
+    "base": "https://strategy.fiintrade.vn/TAStrategy/",
+    "method": "DownloadBreakoutMa"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/TAStrategy/DownloadDownTrend",
+    "base": "https://strategy.fiintrade.vn/TAStrategy/",
+    "method": "DownloadDownTrend"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/TAStrategy/DownloadMarketAnomaly",
+    "base": "https://strategy.fiintrade.vn/TAStrategy/",
+    "method": "DownloadMarketAnomaly"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/TAStrategy/GetAccumulation",
+    "base": "https://strategy.fiintrade.vn/TAStrategy/",
+    "method": "GetAccumulation"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/TAStrategy/GetBestInDownTrend",
+    "base": "https://strategy.fiintrade.vn/TAStrategy/",
+    "method": "GetBestInDownTrend"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/TAStrategy/GetBreakout",
+    "base": "https://strategy.fiintrade.vn/TAStrategy/",
+    "method": "GetBreakout"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/TAStrategy/GetBreakoutMa",
+    "base": "https://strategy.fiintrade.vn/TAStrategy/",
+    "method": "GetBreakoutMa"
+  },
+  {
+    "verb": "GET",
+    "url": "https://strategy.fiintrade.vn/TAStrategy/GetMarketAnomaly",
+    "base": "https://strategy.fiintrade.vn/TAStrategy/",
+    "method": "GetMarketAnomaly"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/PriceData/DownloadPriceData",
+    "base": "https://technical.fiintrade.vn/PriceData/",
+    "method": "DownloadPriceData"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/PriceData/getAllLatestPrice",
+    "base": "https://technical.fiintrade.vn/PriceData/",
+    "method": "getAllLatestPrice"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/PriceData/GetLatestPrice",
+    "base": "https://technical.fiintrade.vn/PriceData/",
+    "method": "GetLatestPrice"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/PriceData/GetPriceData",
+    "base": "https://technical.fiintrade.vn/PriceData/",
+    "method": "GetPriceData"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/PriceData/GetVWAP",
+    "base": "https://technical.fiintrade.vn/PriceData/",
+    "method": "GetVWAP"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/PriceDepth/GetPriceDepth",
+    "base": "https://technical.fiintrade.vn/PriceDepth/",
+    "method": "GetPriceDepth"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TechnicalAnalysisSignals/GetAggressive",
+    "base": "https://technical.fiintrade.vn/TechnicalAnalysisSignals/",
+    "method": "GetAggressive"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TechnicalAnalysisSignals/GetCancelled",
+    "base": "https://technical.fiintrade.vn/TechnicalAnalysisSignals/",
+    "method": "GetCancelled"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TechnicalAnalysisSignals/GetCEFLAbnormality",
+    "base": "https://technical.fiintrade.vn/TechnicalAnalysisSignals/",
+    "method": "GetCEFLAbnormality"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TechnicalAnalysisSignals/GetClosing",
+    "base": "https://technical.fiintrade.vn/TechnicalAnalysisSignals/",
+    "method": "GetClosing"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TechnicalAnalysisSignals/GetPressing",
+    "base": "https://technical.fiintrade.vn/TechnicalAnalysisSignals/",
+    "method": "GetPressing"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TechnicalAnalysisSignals/GetPriceVolumeAnalysis",
+    "base": "https://technical.fiintrade.vn/TechnicalAnalysisSignals/",
+    "method": "GetPriceVolumeAnalysis"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TimeAndSales/DownloadTimeAndSales",
+    "base": "https://technical.fiintrade.vn/TimeAndSales/",
+    "method": "DownloadTimeAndSales"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TimeAndSales/GetTimeAndSales",
+    "base": "https://technical.fiintrade.vn/TimeAndSales/",
+    "method": "GetTimeAndSales"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TimeAndSales/GetTimeAndSalesBuSdChart",
+    "base": "https://technical.fiintrade.vn/TimeAndSales/",
+    "method": "GetTimeAndSalesBuSdChart"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TimeAndSales/GetTimeAndSalesStatChart",
+    "base": "https://technical.fiintrade.vn/TimeAndSales/",
+    "method": "GetTimeAndSalesStatChart"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TradingView/GetIndicators",
+    "base": "https://technical.fiintrade.vn/TradingView/",
+    "method": "GetIndicators"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TradingView/GetStockChartData",
+    "base": "https://technical.fiintrade.vn/TradingView/",
+    "method": "GetStockChartData"
+  },
+  {
+    "verb": "GET",
+    "url": "https://technical.fiintrade.vn/TradingView/GetStockEvents",
+    "base": "https://technical.fiintrade.vn/TradingView/",
+    "method": "GetStockEvents"
+  },
+  {
+    "verb": "POST",
+    "url": "https://tools.fiintrade.vn/Screener/DownloadScreenerItems",
+    "base": "https://tools.fiintrade.vn/Screener/",
+    "method": "DownloadScreenerItems"
+  },
+  {
+    "verb": "POST",
+    "url": "https://tools.fiintrade.vn/Screener/GetScreenerItems",
+    "base": "https://tools.fiintrade.vn/Screener/",
+    "method": "GetScreenerItems"
+  },
+  {
+    "verb": "GET",
+    "url": "https://tools.fiintrade.vn/Screener/GetScreenerParameters",
+    "base": "https://tools.fiintrade.vn/Screener/",
+    "method": "GetScreenerParameters"
+  },
+  {
+    "verb": "POST",
+    "url": "https://tools.fiintrade.vn/Tracking/CreateTrackingOrder",
+    "base": "https://tools.fiintrade.vn/Tracking/",
+    "method": "CreateTrackingOrder"
+  },
+  {
+    "verb": "GET",
+    "url": "https://tools.fiintrade.vn/Valuation/GetValuation",
+    "base": "https://tools.fiintrade.vn/Valuation/",
+    "method": "GetValuation"
+  }
+]

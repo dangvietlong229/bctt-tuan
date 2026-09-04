@@ -1,0 +1,226 @@
+{
+  "page": 1,
+  "pageSize": 0,
+  "totalCount": 36,
+  "items": [
+    {
+      "code": "CEMENTPRICE",
+      "name": "Cement Price",
+      "level": 1,
+      "parentCode": null
+    },
+    {
+      "code": "CPI_MoM",
+      "name": "Chỉ số giá tiêu dùng (So với tháng trước)",
+      "level": 1,
+      "parentCode": "CPI_MoM"
+    },
+    {
+      "code": "CPI_RTD",
+      "name": "Chỉ số giá tiêu dùng (So với kỳ gốc 2009)",
+      "level": 1,
+      "parentCode": "CPI_RTD"
+    },
+    {
+      "code": "CPI_YoY",
+      "name": "Chỉ số giá tiêu dùng (So với cùng kỳ năm trước)",
+      "level": 1,
+      "parentCode": "CPI_YoY"
+    },
+    {
+      "code": "D_VND_12MMax",
+      "name": "LS huy động bằng VND kỳ hạn trên 12 tháng (lớn nhất)",
+      "level": 0,
+      "parentCode": null
+    },
+    {
+      "code": "DisbursedCap",
+      "name": "Vốn thực hiện",
+      "level": 1,
+      "parentCode": "DisbursedCap"
+    },
+    {
+      "code": "DJI",
+      "name": "Dow 30",
+      "level": 1,
+      "parentCode": null
+    },
+    {
+      "code": "Exports_ValM",
+      "name": "Tổng Xuất khẩu (Giá trị tháng)",
+      "level": 0,
+      "parentCode": "Exports_ValM"
+    },
+    {
+      "code": "GDP_PPP",
+      "name": "GDP - Tổng GDP (giá so sánh - tổng số)",
+      "level": 0,
+      "parentCode": null
+    },
+    {
+      "code": "GDP_YoY",
+      "name": "GDP - Tổng GDP (giá so sánh - tăng trưởng so với cùng kỳ)",
+      "level": 0,
+      "parentCode": null
+    },
+    {
+      "code": "GoldS",
+      "name": "World Gold Price",
+      "level": 1,
+      "parentCode": null
+    },
+    {
+      "code": "IIP_MoM",
+      "name": "IIP - Chỉ số sản xuất công nghiệp (So với tháng trước)",
+      "level": 1,
+      "parentCode": "IIP_MoM"
+    },
+    {
+      "code": "IIP_YoY",
+      "name": "IIP - Chỉ số sản xuất công nghiệp (So với cùng kỳ năm trước)",
+      "level": 1,
+      "parentCode": "IIP_YoY"
+    },
+    {
+      "code": "Imports_ValM",
+      "name": "Tổng Nhập Khẩu (Giá trị tháng)",
+      "level": 1,
+      "parentCode": "Imports_ValM"
+    },
+    {
+      "code": "Last10Y",
+      "name": "Trái phiếu CP 10 năm (Giá đóng cửa)",
+      "level": 1,
+      "parentCode": "Last10Y"
+    },
+    {
+      "code": "Last5Y",
+      "name": "Trái phiếu CP 5 năm (Giá đóng cửa)",
+      "level": 1,
+      "parentCode": "Last5Y"
+    },
+    {
+      "code": "Liquidity",
+      "name": "Tổng phương tiện thanh toán",
+      "level": 1,
+      "parentCode": "Liquidity"
+    },
+    {
+      "code": "Liquidity_MoM",
+      "name": "Tổng phương tiện thanh toán (% so với tháng trước)",
+      "level": 1,
+      "parentCode": "Liquidity_MoM"
+    },
+    {
+      "code": "Liquidity_YoY",
+      "name": "Tổng phương tiện thanh toán (% so với cùng kỳ năm trước)",
+      "level": 1,
+      "parentCode": "Liquidity_YoY"
+    },
+    {
+      "code": "Liquidity_YTD",
+      "name": "Tổng phương tiện thanh toán (% so với cuối năm trước)",
+      "level": 1,
+      "parentCode": "Liquidity_YTD"
+    },
+    {
+      "code": "N225",
+      "name": "Nikkei 225",
+      "level": 1,
+      "parentCode": null
+    },
+    {
+      "code": "NASDAQ",
+      "name": "NASDAQ Composite Index",
+      "level": 1,
+      "parentCode": null
+    },
+    {
+      "code": "OilWTI",
+      "name": "Oil WTI",
+      "level": 1,
+      "parentCode": null
+    },
+    {
+      "code": "OV_R",
+      "name": "Lãi suất BQ liên NH Qua đêm (%)",
+      "level": 1,
+      "parentCode": "OV_R"
+    },
+    {
+      "code": "OV_V",
+      "name": "Lãi suất BQ liên NH Qua đêm (Doanh số)",
+      "level": 1,
+      "parentCode": "OV_V"
+    },
+    {
+      "code": "PEHNX",
+      "name": "P/E HNX",
+      "level": 1,
+      "parentCode": null
+    },
+    {
+      "code": "PEHOSE",
+      "name": "P/E HOSE",
+      "level": 1,
+      "parentCode": null
+    },
+    {
+      "code": "PEUPCOM",
+      "name": "P/E UPCOM",
+      "level": 1,
+      "parentCode": null
+    },
+    {
+      "code": "PMI",
+      "name": "Chỉ số quản trị tiêu dùng PMI",
+      "level": 1,
+      "parentCode": "PMI"
+    },
+    {
+      "code": "PMI_Change",
+      "name": "Chỉ số quản trị tiêu dùng PMI (Thay đổi so với tháng trước)",
+      "level": 2,
+      "parentCode": "PMI"
+    },
+    {
+      "code": "PMI_MoM",
+      "name": "Chỉ số quản trị tiêu dùng PMI (% so với tháng trước)",
+      "level": 2,
+      "parentCode": "PMI"
+    },
+    {
+      "code": "PMIF",
+      "name": "PMI_forecast_value",
+      "level": 0,
+      "parentCode": "PMIF"
+    },
+    {
+      "code": "RegdCap",
+      "name": "Vốn đăng ký",
+      "level": 1,
+      "parentCode": "RegdCap"
+    },
+    {
+      "code": "STEELPRICESB",
+      "name": "Steel Price SB",
+      "level": 1,
+      "parentCode": null
+    },
+    {
+      "code": "STEELPRICESWR",
+      "name": "Steel Price SWR",
+      "level": 1,
+      "parentCode": null
+    },
+    {
+      "code": "USD_VND",
+      "name": "USD/VND",
+      "level": 0,
+      "parentCode": null
+    }
+  ],
+  "packageId": null,
+  "status": "Success",
+  "errors": null
+}

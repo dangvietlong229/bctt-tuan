@@ -1,0 +1,297 @@
+{
+  "page": 1,
+  "pageSize": 0,
+  "totalCount": 41,
+  "items": [
+    {
+      "id": 470793,
+      "type": "ShareIssuance",
+      "publicDate": "2024-06-13T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": "2024-06-20T00:00:00"
+    },
+    {
+      "id": 1300411,
+      "type": "InternalTransaction",
+      "publicDate": "2024-07-17T00:00:00",
+      "actionTypeCode": "S",
+      "exrightDate": null
+    },
+    {
+      "id": 74673,
+      "type": "Earning",
+      "publicDate": "2024-08-13T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": null
+    },
+    {
+      "id": 1300736,
+      "type": "InternalTransaction",
+      "publicDate": "2024-09-10T00:00:00",
+      "actionTypeCode": "S",
+      "exrightDate": null
+    },
+    {
+      "id": 68289,
+      "type": "Earning",
+      "publicDate": "2024-09-20T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": null
+    },
+    {
+      "id": 1301232,
+      "type": "InternalTransaction",
+      "publicDate": "2024-10-08T00:00:00",
+      "actionTypeCode": "S",
+      "exrightDate": null
+    },
+    {
+      "id": 77573,
+      "type": "Earning",
+      "publicDate": "2024-10-22T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": null
+    },
+    {
+      "id": 1301790,
+      "type": "InternalTransaction",
+      "publicDate": "2024-11-28T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1301787,
+      "type": "InternalTransaction",
+      "publicDate": "2024-11-28T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1301788,
+      "type": "InternalTransaction",
+      "publicDate": "2024-11-28T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1301789,
+      "type": "InternalTransaction",
+      "publicDate": "2024-11-28T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1301793,
+      "type": "InternalTransaction",
+      "publicDate": "2024-11-28T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1301803,
+      "type": "InternalTransaction",
+      "publicDate": "2024-11-28T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1301791,
+      "type": "InternalTransaction",
+      "publicDate": "2024-11-28T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1301792,
+      "type": "InternalTransaction",
+      "publicDate": "2024-11-28T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 471131,
+      "type": "ShareIssuance",
+      "publicDate": "2024-12-03T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": "2024-11-30T00:00:00"
+    },
+    {
+      "id": 1301902,
+      "type": "InternalTransaction",
+      "publicDate": "2024-12-10T00:00:00",
+      "actionTypeCode": "S",
+      "exrightDate": null
+    },
+    {
+      "id": 1301807,
+      "type": "InternalTransaction",
+      "publicDate": "2024-12-18T00:00:00",
+      "actionTypeCode": "S",
+      "exrightDate": null
+    },
+    {
+      "id": 1302061,
+      "type": "InternalTransaction",
+      "publicDate": "2025-01-24T00:00:00",
+      "actionTypeCode": "S",
+      "exrightDate": null
+    },
+    {
+      "id": 1302281,
+      "type": "InternalTransaction",
+      "publicDate": "2025-03-10T00:00:00",
+      "actionTypeCode": "S",
+      "exrightDate": null
+    },
+    {
+      "id": 80120,
+      "type": "Earning",
+      "publicDate": "2025-03-17T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": null
+    },
+    {
+      "id": 83235,
+      "type": "Earning",
+      "publicDate": "2025-04-22T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": null
+    },
+    {
+      "id": 1303440,
+      "type": "InternalTransaction",
+      "publicDate": "2025-07-14T00:00:00",
+      "actionTypeCode": "S",
+      "exrightDate": null
+    },
+    {
+      "id": 824567,
+      "type": "InternalTransaction",
+      "publicDate": "2025-07-30T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1303604,
+      "type": "InternalTransaction",
+      "publicDate": "2025-07-30T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1303603,
+      "type": "InternalTransaction",
+      "publicDate": "2025-07-30T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1303605,
+      "type": "InternalTransaction",
+      "publicDate": "2025-07-30T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1303607,
+      "type": "InternalTransaction",
+      "publicDate": "2025-07-30T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1303606,
+      "type": "InternalTransaction",
+      "publicDate": "2025-07-30T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 1303608,
+      "type": "InternalTransaction",
+      "publicDate": "2025-07-30T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 471420,
+      "type": "ShareIssuance",
+      "publicDate": "2025-08-07T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": "2025-08-04T00:00:00"
+    },
+    {
+      "id": 85177,
+      "type": "Earning",
+      "publicDate": "2025-08-13T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": null
+    },
+    {
+      "id": 1303891,
+      "type": "InternalTransaction",
+      "publicDate": "2025-09-18T00:00:00",
+      "actionTypeCode": "S",
+      "exrightDate": null
+    },
+    {
+      "id": 627370,
+      "type": "Dividend",
+      "publicDate": "2025-09-24T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": "2025-09-30T00:00:00"
+    },
+    {
+      "id": 88005,
+      "type": "Earning",
+      "publicDate": "2025-10-21T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": null
+    },
+    {
+      "id": 1304544,
+      "type": "InternalTransaction",
+      "publicDate": "2025-11-04T00:00:00",
+      "actionTypeCode": "B",
+      "exrightDate": null
+    },
+    {
+      "id": 90603,
+      "type": "Earning",
+      "publicDate": "2026-03-17T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": null
+    },
+    {
+      "id": 93379,
+      "type": "Earning",
+      "publicDate": "2026-04-22T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": null
+    },
+    {
+      "id": 627834,
+      "type": "Dividend",
+      "publicDate": "2026-05-14T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": "2026-05-19T00:00:00"
+    },
+    {
+      "id": 472150,
+      "type": "ShareIssuance",
+      "publicDate": "2026-05-14T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": "1753-01-01T00:00:00"
+    },
+    {
+      "id": 472020,
+      "type": "ShareIssuance",
+      "publicDate": "2026-05-14T00:00:00",
+      "actionTypeCode": null,
+      "exrightDate": "1753-01-01T00:00:00"
+    }
+  ],
+  "packageId": null,
+  "status": "Success",
+  "errors": null
+}

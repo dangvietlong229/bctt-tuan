@@ -1,0 +1,25 @@
+{
+  "connectionId": "t9WgNS4Tnt4VRLyIZ6jcWA",
+  "availableTransports": [
+    {
+      "transport": "WebSockets",
+      "transferFormats": [
+        "Text",
+        "Binary"
+      ]
+    },
+    {
+      "transport": "ServerSentEvents",
+      "transferFormats": [
+        "Text"
+      ]
+    },
+    {
+      "transport": "LongPolling",
+      "transferFormats": [
+        "Text",
+        "Binary"
+      ]
+    }
+  ]
+}

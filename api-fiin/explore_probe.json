@@ -1,0 +1,32 @@
+[
+  {
+    "ctrl": "Calendar",
+    "status": 401,
+    "size": 0
+  },
+  {
+    "ctrl": "SectorIndepth",
+    "status": 200,
+    "size": 99
+  },
+  {
+    "ctrl": "News",
+    "status": 200,
+    "size": 100
+  },
+  {
+    "ctrl": "Strategy",
+    "status": 401,
+    "size": 0
+  },
+  {
+    "ctrl": "TAStrategy",
+    "status": 401,
+    "size": 0
+  },
+  {
+    "ctrl": "Rankings",
+    "status": 401,
+    "size": 0
+  }
+]

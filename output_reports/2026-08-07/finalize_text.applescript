@@ -1,0 +1,46 @@
+on writeTable(targetTable, tableData, startRow, startColumn)
+    tell application "Microsoft PowerPoint"
+        repeat with rowOffset from 1 to count of tableData
+            set rowData to item rowOffset of tableData
+            repeat with columnOffset from 1 to count of rowData
+                set targetCell to get cell from targetTable row (startRow + rowOffset - 1) column (startColumn + columnOffset - 1)
+                set content of text range of text frame of shape of targetCell to item columnOffset of rowData
+            end repeat
+        end repeat
+    end tell
+end writeTable
+
+on setParagraphText(targetShape, paragraphNumber, newText)
+    tell application "Microsoft PowerPoint"
+        set targetRange to text range of text frame of targetShape
+        set content of paragraph paragraphNumber of targetRange to newText
+    end tell
+end setParagraphText
+
+on run argv
+    tell application "Microsoft PowerPoint"
+        open "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/output_reports/2026-08-07/MBS Dau Tu - BC Thi truong Tuan - 10.08.2026.pptx"
+        set pres to active presentation
+        my setParagraphText(shape "Text Placeholder 7" of slide 3 of pres, 3, "Trong tuần 03/08–07/08/2026, VNINDEX tăng 32 điểm (1,9%) so với cuối tuần trước, lên 1.768 điểm, trong khi thanh khoản tăng 5,4%. VN30 tăng 39 điểm (2,1%) lên 1.911 điểm với thanh khoản tăng 8,1%. Thị trường mở đầu tuần tích cực khi VNINDEX tăng 27 điểm lên 1.763 điểm và tiếp tục đạt mức cao nhất 1.777 điểm trong phiên 04/08. Tuy nhiên, chỉ số sau đó suy yếu hai phiên liên tiếp, giảm tổng cộng hơn 12 điểm về 1.765 điểm trước khi hồi nhẹ 3 điểm trong phiên cuối tuần. Nhìn chung, thanh khoản cải thiện cho thấy dòng tiền đã tích cực hơn, nhưng việc VNINDEX không duy trì được vùng cao trong tuần phản ánh áp lực chốt lời và trạng thái giằng co vẫn hiện hữu.")
+
+        my setParagraphText(shape "Text Placeholder 7" of slide 3 of pres, 4, "Về bối cảnh thị trường, dữ liệu kỳ này chưa bao gồm thông tin vĩ mô trong nước và quốc tế mới, do đó chưa đủ cơ sở đánh giá tác động của lãi suất, tỷ giá, tăng trưởng hay hàng hóa lên VNINDEX. Xét riêng tín hiệu giao dịch, thanh khoản tăng và chỉ số duy trì mức tăng so với cuối tuần trước là yếu tố hỗ trợ; ngược lại, hai phiên điều chỉnh sau khi VNINDEX chạm 1.777 điểm cho thấy lực cung vẫn đáng kể tại vùng cao. Trong tuần tới, 1.777 điểm là ngưỡng cần vượt để củng cố đà tăng, trong khi khu vực 1.763–1.765 điểm đóng vai trò tham chiếu hỗ trợ ngắn hạn. Kịch bản cơ sở là thị trường tiếp tục giằng co và kiểm định lại các mốc này.")
+
+        my setParagraphText(shape "Text Placeholder 7" of slide 3 of pres, 5, "Xét về đóng góp của nhóm Vingroup vào chỉ số, từ đầu năm 2025 tới hiện tại, nhóm VIC, VHM, VRE và VPL đã đóng góp tăng khoảng 437 điểm trong tổng mức tăng 501 điểm của VNINDEX, tương ứng khoảng 87% mức tăng của chỉ số; phần còn lại của thị trường tăng khoảng 65 điểm so với cuối năm 2024. Từ đầu tháng 8, nhóm Vingroup đóng góp giảm khoảng 0,3 điểm, trong khi VNINDEX tăng 32 điểm. Riêng trong tuần này, nhóm Vingroup cũng đóng góp giảm khoảng 0,3 điểm; VIC đóng góp tích cực nhưng bị triệt tiêu bởi VHM, VRE và VPL. Nếu không tính nhóm Vingroup, VNINDEX hiện ở mức khoảng 1.331 điểm, tăng gần 33 điểm so với tuần trước.")
+
+        my setParagraphText(shape "Text Placeholder 7" of slide 4 of pres, 3, "Sắc xanh chiếm ưu thế rõ rệt khi 17/18 nhóm ngành tăng trong tuần. Bảo hiểm dẫn đầu với mức tăng 9,63%, tiếp theo là Hàng cá nhân & Gia dụng 7,98%, Hóa chất 6,55%, Điện, nước & xăng dầu khí đốt 5,52%, Bán lẻ 5,50% và Công nghệ Thông tin 5,12%. Ở chiều kém tích cực, Dịch vụ tài chính giảm nhẹ 0,06%, trong khi Thực phẩm và đồ uống cùng Bất động sản chỉ tăng lần lượt 0,34% và 0,36%. Diễn biến này phản ánh độ lan tỏa theo ngành khá rộng trong tuần.")
+
+        my setParagraphText(shape "Text Placeholder 7" of slide 4 of pres, 4, "So với diễn biến một tháng, đà tăng tuần này vẫn mang nhiều đặc điểm của một nhịp phục hồi ngắn hạn. Hàng cá nhân & Gia dụng tăng 7,98% trong tuần nhưng còn giảm 16,67% trong tháng; Hóa chất, Công nghệ Thông tin, Xây dựng và Vật liệu cùng Ngân hàng cũng phục hồi nhưng vẫn âm theo tháng. Ngược lại, Bảo hiểm duy trì sức mạnh tương đối với mức tăng 10,56% trong tháng, trong khi Dầu khí tăng 6,43%. Sự chênh lệch này cho thấy xu hướng trung hạn giữa các nhóm ngành vẫn phân hóa đáng kể.")
+
+        my setParagraphText(shape "Text Placeholder 7" of slide 5 of pres, 2, "Trong nhóm 10 mã dẫn đầu, khối ngoại mua ròng nổi bật FPT, DMX và VIC; bán ròng tập trung ở VPB, TCB. Tự doanh bán ròng mạnh GEE, MWG, GEX, trong khi mua ròng nổi bật MBB và HDB.")
+
+        my setParagraphText(shape "Text Placeholder 7" of slide 6 of pres, 16, "Khối ngoại tiếp tục bán ròng cả ACB, VIB, VPB và TCB. Riêng tháng 8, VPB bị bán ròng nhiều nhất 22,7 triệu cổ phiếu; lũy kế từ đầu năm, ACB chịu áp lực lớn nhất với 231,3 triệu cổ phiếu.")
+
+        my setParagraphText(shape "Text Placeholder 7" of slide 8 of pres, 1, "VNINDEX kết thúc tuần tại 1.768,06 điểm, tăng 0,30%, trong khi VN30 giảm 0,34% xuống 1.911,09 điểm. Thanh khoản khớp lệnh trên VNINDEX đạt khoảng 74,2 nghìn tỷ đồng, tăng 5,4% so với tuần trước. Độ lan tỏa theo ngành tích cực khi 17/18 nhóm tăng giá, dẫn đầu bởi Bảo hiểm, Hàng cá nhân & Gia dụng và Hóa chất. Tuy vậy, chỉ số không duy trì được mức cao 1.777,23 điểm hình thành đầu tuần và chỉ hồi nhẹ trong phiên cuối, cho thấy trạng thái giằng co vẫn hiện hữu.")
+
+        my setParagraphText(shape "Text Placeholder 7" of slide 8 of pres, 2, "Cơ hội nằm ở sự cải thiện thanh khoản và mức tăng tương đối đồng đều của phần lớn nhóm ngành, tạo điều kiện để dòng tiền tiếp tục tìm kiếm cơ hội ở các nhóm có động lượng tốt. Tuy nhiên, rủi ro vẫn cần được cân nhắc khi VN30 đi ngược VNINDEX và nhiều ngành tăng mạnh trong tuần vẫn giảm đáng kể nếu xét theo một tháng, đặc biệt là Hàng cá nhân & Gia dụng, Truyền thông và Dịch vụ tài chính. Do đó, diễn biến hiện tại phù hợp với đánh giá phục hồi có phân hóa hơn là một xu hướng tăng đồng thuận đã được xác nhận.")
+
+        my setParagraphText(shape "Text Placeholder 7" of slide 8 of pres, 3, "Trong tuần tới, kịch bản tích cực cần VNINDEX duy trì trên mức đóng cửa 1.768,06 điểm và vượt mức cao trong tuần 1.777,23 điểm với thanh khoản không suy giảm. Kịch bản trung tính là chỉ số tiếp tục dao động quanh mặt bằng cuối tuần khi dòng tiền luân chuyển giữa các nhóm ngành. Ngược lại, việc lùi xuống dưới mức đầu tuần 1.762,84 điểm, đồng thời thanh khoản suy yếu, sẽ làm tăng rủi ro điều chỉnh ngắn hạn. Đây là các mốc tham chiếu trực tiếp từ dữ liệu tuần qua, không phải vùng dự báo mới.")
+        save pres
+        close pres saving yes
+    end tell
+end run

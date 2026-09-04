@@ -1,0 +1,25 @@
+{
+  "as_of": "2026-07-31",
+  "draft_pptx": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/output_reports/2026-07-31/MBS Dau Tu - BC Thi truong Tuan - 03.08.2026 - DRAFT.pptx",
+  "final_pptx": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/output_reports/2026-07-31/MBS Dau Tu - BC Thi truong Tuan - 03.08.2026.pptx",
+  "final_pdf": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/output_reports/2026-07-31/MBS Dau Tu - BC Thi truong Tuan - 03.08.2026.pdf",
+  "review_prompt": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/output_reports/2026-07-31/review/review_prompt.txt",
+  "commentary": null,
+  "warnings": [
+    "Vingroup chart was preserved because replacement failed: Office automation failed (replace_excel_chart.applescript): /Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/scripts/replace_excel_chart.applescript:469:471: execution error: The variable wb is not defined. (-2753)",
+    "Không tìm thấy ảnh PNG trong incoming; ảnh VNINDEX cũ được giữ nguyên."
+  ],
+  "sources": {
+    "sectors": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/nganh/Nganh_update 310726.xlsx",
+    "portfolio": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/danh muc mbs/Danh muc mbs_update 310726.xlsx",
+    "foreign_buy": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/gd nuoc ngoai/FiinProX_Nuoc ngoai_Top gia tri rong_Mua_VNINDEX_20260731_update 310726.xlsx",
+    "foreign_sell": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/gd nuoc ngoai/FiinProX_Nuoc ngoai_Top gia tri rong_Ban_VNINDEX_20260731_update 310726.xlsx",
+    "liquidity": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/thanh khoan tt/Thanh khoan tt_update 310726.xlsx",
+    "vingroup": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/dong gop cua vingroup/Dong gop cua vingroup_update 310726.xlsx",
+    "foreign_watchlist": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/nn ban rong/NN ban rong_update 310726.xlsx",
+    "proprietary": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/gd tu doanh/Thong ke Tu doanh Co phieu_update 310726.xlsx",
+    "company_news": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/tin doanh nghiep/BaoCao_TinChinhThong_ACB_TCB_VIB_VPB_Tuan_25_31_Jul_2026_update 310726.xlsx",
+    "calendar": "/Users/longmac/Library/CloudStorage/GoogleDrive-dangvietlong229@gmail.com/My Drive/Documents/Python Utilities/BCTT Tuan/lich su kien/Lich su kien_update 310726.xlsx"
+  },
+  "vnindex_chart_image": null
+}
