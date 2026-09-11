@@ -1,3 +1,6 @@
+from report_files import (friday_on_or_before, get_report_as_of, get_update_suffix,
+                          date_from_filename, select_file_for_as_of,
+                          find_latest_template, filter_raw_files, parse_module_exclusions)
 import os
 import glob
 import re
@@ -81,7 +84,7 @@ def pull_data_from_api(workspace_dir):
     print(f"Total tickers to query: {len(all_tickers)}")
     js_path = os.path.join(workspace_dir, "api-fiin", "pull_all_inputs.js")
     try:
-        as_of = os.environ.get("REPORT_AS_OF", datetime.date.today().isoformat())
+        as_of = get_report_as_of().isoformat()
         subprocess.run(
             ["node", js_path, f"--tickers={tickers_str}", f"--as-of={as_of}"],
             cwd=os.path.join(workspace_dir, "api-fiin"),
@@ -98,7 +101,7 @@ def load_api_data(workspace_dir):
         try:
             with open(json_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-            expected = os.environ.get("REPORT_AS_OF", datetime.date.today().isoformat())
+            expected = get_report_as_of().isoformat()
             if data.get("asOf") != expected:
                 raise ValueError(f"API data asOf={data.get('asOf')} does not match REPORT_AS_OF={expected}")
             generated = data.get("generatedAt")
@@ -106,7 +109,12 @@ def load_api_data(workspace_dir):
                 raise ValueError("API data has no generatedAt timestamp")
             generated_at = datetime.datetime.fromisoformat(generated.replace("Z", "+00:00"))
             now = datetime.datetime.now(datetime.timezone.utc)
-            if now - generated_at.astimezone(datetime.timezone.utc) > datetime.timedelta(hours=12):
+            if generated_at.tzinfo is None:
+                raise ValueError("API generatedAt must include a timezone")
+            age = now - generated_at.astimezone(datetime.timezone.utc)
+            if age < -datetime.timedelta(minutes=5):
+                raise ValueError("API generatedAt is in the future")
+            if age > datetime.timedelta(hours=12):
                 raise ValueError("API data is older than 12 hours")
             return data
         except Exception as e:
@@ -114,15 +122,6 @@ def load_api_data(workspace_dir):
     raise FileNotFoundError(f"API data file was not created: {json_path}")
 
 
-
-def friday_on_or_before(day: datetime.date) -> datetime.date:
-    return day - datetime.timedelta(days=(day.weekday() - 4) % 7)
-
-
-def get_update_suffix():
-    configured = os.environ.get("REPORT_AS_OF", "").strip()
-    day = datetime.date.fromisoformat(configured) if configured else friday_on_or_before(datetime.date.today())
-    return f"_update {day.strftime('%d%m%y')}"
 
 def save_output_file(wb, original_template_path):
     dir_name = os.path.dirname(original_template_path)
@@ -143,19 +142,6 @@ def save_output_file(wb, original_template_path):
             os.remove(temporary_path)
     print(f"Saved processed output to: {output_path}")
     return output_path
-
-def find_latest_template(directory, pattern, fallback_name):
-    files = glob.glob(os.path.join(directory, pattern))
-    # Exclude temporary Excel files starting with ~$
-    files = [f for f in files if not os.path.basename(f).startswith('~$')]
-    if files:
-        # Sort by modification time to get the latest processed file
-        files.sort(key=os.path.getmtime)
-        return files[-1]
-    return os.path.join(directory, fallback_name)
-
-def filter_raw_files(file_list):
-    return [f for f in file_list if '_update' not in os.path.basename(f)]
 
 def translate_formulas_after_insert(ws, insert_row, num_inserted, ignore_cols=None):
     from openpyxl.formula.translate import Translator
@@ -546,7 +532,9 @@ def calculate_fiin_pe_pb_medians(mbs_dir):
         print("Warning: No daily transaction file ('*Du_lieu_giao_dich*.xlsx') found in 'danh muc mbs' for medians calculation.")
         return {}
     
-    daily_file = sorted(daily_files)[-1]
+    daily_file = select_file_for_as_of(filter_raw_files(daily_files), get_report_as_of())
+    if daily_file is None:
+        return {}
     print(f"Calculating 5-year medians from daily PE/PB file: {daily_file}")
     
     try:
@@ -566,6 +554,7 @@ def calculate_fiin_pe_pb_medians(mbs_dir):
                 break
         
         if not row8 or not row9:
+            wb.close()
             return {}
             
         curr_t = None
@@ -903,7 +892,10 @@ def run_mbs_feature(workspace_dir):
 def run_foreign_feature(workspace_dir):
     print("\n================ RUNNING GD NUOC NGOAI FEATURE ================")
     foreign_dir = os.path.join(workspace_dir, 'gd nuoc ngoai')
-    pdf_files = glob.glob(os.path.join(foreign_dir, 'Room_*.pdf'))
+    pdf_files = [
+        f for f in glob.glob(os.path.join(foreign_dir, '*.pdf'))
+        if os.path.basename(f).lower().startswith('room')
+    ]
     ban_files = filter_raw_files(glob.glob(os.path.join(foreign_dir, 'FiinProX_*Ban*.xlsx')))
     mua_files = filter_raw_files(glob.glob(os.path.join(foreign_dir, 'FiinProX_*Mua*.xlsx')))
 
@@ -1191,7 +1183,7 @@ def run_vingroup_feature(workspace_dir):
             dt_str = item.get('tradingDate')[:10]
             dt = datetime.datetime.strptime(dt_str, '%Y-%m-%d').date()
             # If it's the latest day in the series, use the latest market cap from latest_indices
-            mcap = vnindex_mcap_latest if vnindex_mcap_latest and dt == datetime.date.today() else None
+            mcap = vnindex_mcap_latest if vnindex_mcap_latest and dt == get_report_as_of() else None
             if not mcap:
                 # Fallback to approximating or None
                 mcap = None
@@ -1386,7 +1378,7 @@ def run_nn_ban_rong_feature(workspace_dir):
     tickers_list = ['ACB', 'VIB', 'VPB', 'TCB']
     
     # Determine the trading date of today's run
-    run_date = datetime.date.today()
+    run_date = get_report_as_of()
     
     row_info = {'date': run_date}
     has_data = False
@@ -2010,7 +2002,7 @@ def run_tin_doanh_nghiep_feature(workspace_dir, watchlist=None):
         
     print(f"Watchlist: {', '.join(watchlist)}")
     
-    reference_date = datetime.datetime.now()
+    reference_date = datetime.datetime.combine(get_report_as_of(), datetime.time.min)
     current_weekday = reference_date.weekday()
     days_to_friday = 4 - current_weekday
     this_friday = reference_date + datetime.timedelta(days=days_to_friday)
@@ -2022,6 +2014,7 @@ def run_tin_doanh_nghiep_feature(workspace_dir, watchlist=None):
     
     print(f"[*] Thu thập Tin chính thống từ {start_date.strftime('%Y-%m-%d')} đến {end_date.strftime('%Y-%m-%d')}...")
     raw_news = []
+    failed_tickers = []
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
     }
@@ -2056,7 +2049,7 @@ def run_tin_doanh_nghiep_feature(workspace_dir, watchlist=None):
                         if len(time_str) >= 10:
                             pub_date = datetime.datetime.strptime(time_str[:10], "%Y-%m-%d")
                         else:
-                            pub_date = datetime.datetime.now()
+                            pub_date = datetime.datetime.combine(get_report_as_of(), datetime.time.min)
                             
                         if start_date.date() <= pub_date.date() <= end_date.date():
                             raw_news.append({
@@ -2074,14 +2067,19 @@ def run_tin_doanh_nghiep_feature(workspace_dir, watchlist=None):
                         print(f"[!] Lỗi parse ngày tháng {time_str}: {e}")
         except Exception as e:
             print(f"[!] Lỗi khi lấy tin tức cho mã {ticker} qua API: {e}")
+            failed_tickers.append(ticker)
         time.sleep(1)
         
-    if not raw_news:
-        print("⚠️ Không thu thập được tin tức chính thống nào.")
+    if failed_tickers:
+        print("Không xuất báo cáo tin thiếu dữ liệu: " + ", ".join(failed_tickers))
         return False
+
+    if not raw_news:
+        print("Không có tin chính thống trong kỳ báo cáo.")
         
     df = pd.DataFrame(raw_news)
-    df.drop_duplicates(subset=['Tiêu đề gốc'], keep='first', inplace=True)
+    if not df.empty:
+        df.drop_duplicates(subset=['Mã CK', 'Tiêu đề gốc'], keep='first', inplace=True)
     cleaned_news = df.to_dict('records')
     
     processed_news = []
@@ -2137,16 +2135,7 @@ def run_tin_doanh_nghiep_feature(workspace_dir, watchlist=None):
                 
     print(f"Saved processed output to: {filepath}")
     
-    # Delete old report files in this directory
-    old_reports = glob.glob(os.path.join(output_dir, "BaoCao_TinChinhThong_*_update *.xlsx"))
-    for p in old_reports:
-        if os.path.abspath(p) != os.path.abspath(filepath):
-            try:
-                os.remove(p)
-                print(f"Deleted old report file: {os.path.basename(p)}")
-            except OSError as e:
-                print(f"Warning: Could not delete old report file {p}: {e}")
-                
+    # Retain prior reporting periods for reproducible historical runs.
     print("✅ HOÀN THÀNH QUÁ TRÌNH TẠO BÁO CÁO TIN DOANH NGHIỆP!\n")
     return True
 
@@ -2246,7 +2235,7 @@ def run_lich_su_kien_feature(workspace_dir):
         print(f"Created output directory: {output_dir}")
 
     # 1. Calculate next week's Monday and Sunday
-    today = datetime.date.today()
+    today = get_report_as_of()
     days_to_next_monday = 7 - today.weekday()
     next_monday = today + datetime.timedelta(days=days_to_next_monday)
     next_sunday = next_monday + datetime.timedelta(days=6)
@@ -2425,8 +2414,9 @@ MODULES = [
 ]
 
 
-def run_selected_modules(workspace_dir, excluded=None):
+def run_selected_modules(workspace_dir, excluded=None, skip_failed=False):
     excluded = excluded or set()
+    parse_module_exclusions(','.join(excluded))
     results = []
     for number, name, function in MODULES:
         if number in excluded:
@@ -2440,7 +2430,7 @@ def run_selected_modules(workspace_dir, excluded=None):
         results.append((name, status, detail)); print(f"[{status}] {name}: {detail}")
     failed = [name for name, status, _ in results if status in {"KHÔNG ĐẠT", "LỖI"}]
     print("\n[TỔNG HỢP] " + ("CÓ MODULE KHÔNG ĐẠT: " + ", ".join(failed) if failed else "TẤT CẢ MODULE ĐƯỢC CHỌN ĐỀU CHẠY THÀNH CÔNG"))
-    return not failed
+    return not failed or skip_failed
 
 def interactive_menu(workspace_dir):
     while True:
@@ -2552,16 +2542,16 @@ def main():
         arg = sys.argv[1].lower()
         if arg == 'all':
             excluded = set()
-            if len(sys.argv) > 2:
+            if len(sys.argv) > 2 and not sys.argv[2].startswith('--'):
                 excluded = {x.strip() for x in sys.argv[2].split(',')}
             elif '--exclude' in sys.argv:
                 try:
                     idx = sys.argv.index('--exclude')
                     excluded = {x.strip() for x in sys.argv[idx+1].split(',')}
                 except (ValueError, IndexError):
-                    pass
+                    raise SystemExit("--exclude requires module numbers 2-10")
 
-            if not run_selected_modules(workspace_dir, excluded):
+            if not run_selected_modules(workspace_dir, excluded, skip_failed='--skip-failed' in sys.argv):
                 raise SystemExit(1)
         elif 'nganh' in arg:
             if run_nganh_feature(workspace_dir) is False: raise SystemExit(1)

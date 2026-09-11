@@ -352,21 +352,7 @@ def extract_excel_range(
     return [row[:column_count] for row in matrix[:row_count]]
 
 
-def date_from_filename(path: Path) -> dt.date | None:
-    """Extract an as-of date from the filename formats used by FiinProX and this project."""
-    name = path.name
-    candidates: list[dt.date] = []
-    for token in re.findall(r"(?<!\d)(20\d{6})(?!\d)", name):
-        try:
-            candidates.append(dt.datetime.strptime(token, "%Y%m%d").date())
-        except ValueError:
-            pass
-    for token in re.findall(r"(?i)(?:update[ _-]*)(\d{6})(?!\d)", name):
-        try:
-            candidates.append(dt.datetime.strptime(token, "%d%m%y").date())
-        except ValueError:
-            pass
-    return max(candidates) if candidates else None
+from report_files import date_from_filename, parse_module_exclusions
 
 
 def latest_file(patterns: list[str], as_of: dt.date | None = None) -> Path | None:
@@ -613,7 +599,10 @@ def infer_as_of(sources: dict[str, Path | None], override: str | None) -> dt.dat
 
 
 def parse_date(value: str) -> dt.date | None:
-    text = str(value).strip().split()[0]
+    parts = str(value).strip().split()
+    if not parts:
+        return None
+    text = parts[0]
     for fmt in ("%Y-%m-%d", "%d/%m/%Y", "%m/%d/%Y", "%Y/%m/%d"):
         try:
             return dt.datetime.strptime(text, fmt).date()
@@ -1063,9 +1052,19 @@ def compute_vingroup_contribution(path: Path | None, as_of: dt.date) -> dict[str
 
 def compute_vingroup_metrics(records: list[dict[str, Any]], as_of: dt.date) -> dict[str, Any] | None:
     """Compute period metrics from already validated, chronological price/share records."""
-    records = [dict(record) for record in sorted(records, key=lambda item: item["date"])]
+    import math
+    records = [dict(record) for record in sorted(records, key=lambda item: item["date"]) if record["date"] <= as_of]
     if len(records) < 2:
         return None
+    if len({record["date"] for record in records}) != len(records):
+        return None
+    for record in records:
+        values = [record["index"], record["market_cap"], *record["stocks"]]
+        if len(record["stocks"]) != 8 or any(
+            isinstance(value, bool) or not isinstance(value, (int, float))
+            or not math.isfinite(value) or value <= 0 for value in values
+        ):
+            return None
     for current, previous in zip(records[1:], records[:-1]):
         cap_change = sum(
             float(current["stocks"][offset]) * float(current["stocks"][offset + 1])
@@ -1204,7 +1203,7 @@ def route_inputs(config: dict[str, Any]) -> list[str]:
     incoming.mkdir(parents=True, exist_ok=True)
     messages: list[str] = []
     for source in sorted(incoming.iterdir()):
-        if not source.is_file() or source.name.startswith("."):
+        if not source.is_file() or source.name.startswith((".", "~$")):
             continue
         if source.name == "README.txt":
             continue
@@ -1224,7 +1223,7 @@ def route_inputs(config: dict[str, Any]) -> list[str]:
             destinations = ["gd tu doanh"]
         elif ("top gia tri rong" in lower or "top giá trị ròng" in lower) and source.suffix.lower() == ".xlsx":
             destinations = ["gd nuoc ngoai"]
-        elif lower.startswith("room_") and source.suffix.lower() == ".pdf":
+        elif lower.startswith("room") and source.suffix.lower() == ".pdf":
             destinations = ["gd nuoc ngoai"]
         elif "chi_so_&_nganh" in lower or ("chi_so" in lower and "nganh" in lower):
             destinations = ["thanh khoan tt", "dong gop cua vingroup"]
@@ -1254,12 +1253,14 @@ def route_inputs(config: dict[str, Any]) -> list[str]:
     return messages
 
 
-def run_processor(as_of: dt.date, config: dict[str, Any], excluded_modules: str = "") -> Path:
+def run_processor(as_of: dt.date, config: dict[str, Any], excluded_modules: str = "", skip_failed: bool = False) -> Path:
     archive = copy_to_archive(as_of, config)
     log(f"Archived current feature files to {archive.relative_to(ROOT)}")
     command = [sys.executable, str(ROOT / config["processor"]), "all"]
     if excluded_modules.strip():
         command.append(excluded_modules.strip())
+    if skip_failed:
+        command.append("--skip-failed")
     processor_env = os.environ.copy()
     processor_env["PYTHONUTF8"] = "1"
     processor_env["PYTHONIOENCODING"] = "utf-8"
@@ -1877,6 +1878,7 @@ def build_parser() -> argparse.ArgumentParser:
     process_parser = subparsers.add_parser("process", help="Archive current files and run process_data.py.")
     process_parser.add_argument("--as-of")
     process_parser.add_argument("--exclude-modules", default="", help="Comma-separated module numbers 2-10 to skip.")
+    process_parser.add_argument("--skip-failed", action="store_true", help="Bỏ qua các module lỗi và tiếp tục.")
 
     prepare_parser = subparsers.add_parser("prepare", help="Build draft deck and review package.")
     prepare_parser.add_argument("--as-of")
@@ -1887,6 +1889,7 @@ def build_parser() -> argparse.ArgumentParser:
     all_parser.add_argument("--skip-process", action="store_true")
     all_parser.add_argument("--force", action="store_true")
     all_parser.add_argument("--exclude-modules", default="", help="Comma-separated module numbers 2-10 to skip.")
+    all_parser.add_argument("--skip-failed", action="store_true", help="Bỏ qua các module lỗi và tiếp tục tạo bản nháp.")
 
     finalize_parser = subparsers.add_parser("finalize", help="Apply reviewed commentary and export PPTX/PDF.")
     finalize_parser.add_argument("--commentary")
@@ -1900,6 +1903,8 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main() -> int:
     args = build_parser().parse_args()
+    if hasattr(args, "exclude_modules"):
+        parse_module_exclusions(args.exclude_modules)
     config = load_config()
     if args.command == "doctor":
         run_doctor(config)
@@ -1929,17 +1934,47 @@ def main() -> int:
 
     if args.command in {"process", "all"} and not getattr(args, "skip_process", False):
         excluded_modules = getattr(args, "exclude_modules", "")
-        step("Xử lý các module dữ liệu", lambda: run_processor(as_of, config, excluded_modules))
+        skip_failed = getattr(args, "skip_failed", False)
+        try:
+            step("Xử lý các module dữ liệu", lambda: run_processor(as_of, config, excluded_modules, skip_failed=skip_failed))
+        except Exception as exc:
+            if skip_failed:
+                log(f"[BỎ QUA] Đã bỏ qua lỗi xử lý dữ liệu theo tùy chọn --skip-failed: {exc}")
+            else:
+                should_skip = False
+                if os.environ.get("REPORT_NONINTERACTIVE") == "1" or not sys.stdin.isatty():
+                    raise
+                try:
+                    print("\n" + "=" * 65)
+                    print(f"CẢNH BÁO: Bước xử lý dữ liệu gặp lỗi: {exc}")
+                    print("=" * 65)
+                    ans = input("👉 Bạn có muốn BỎ QUA lỗi này và tiếp tục tạo bản nháp với dữ liệu hiện có? (y/n) [mặc định: y]: ").strip().lower()
+                    if ans in {'', 'y', 'yes', 'c', 'co', 'ok'}:
+                        should_skip = True
+                except (KeyboardInterrupt, EOFError):
+                    should_skip = False
+
+                if should_skip:
+                    log("[TIẾP TỤC] Người dùng chọn tiếp tục tạo bản nháp.")
+                else:
+                    raise
+
         sources = resolve_sources(config)
         as_of = infer_as_of(sources, getattr(args, "as_of", None))
-        step("Tạo bảng giao dịch tự doanh", lambda: ensure_proprietary_workbook(as_of, config))
+        try:
+            step("Tạo bảng giao dịch tự doanh", lambda: ensure_proprietary_workbook(as_of, config))
+        except Exception as exc:
+            log(f"WARNING: Không thể tạo bảng tự doanh ({exc}); tiếp tục tạo bản nháp.")
 
     if args.command in {"prepare", "all"}:
         step("Tạo bản nháp và gói commentary", lambda: prepare_report(as_of, config, force=getattr(args, "force", False)))
     elif args.command == "finalize":
         step("Cập nhật commentary và xuất PowerPoint/PDF", lambda: finalize_report(config, args.commentary, args.keep_existing_commentary))
     if statuses:
-        log("[TỔNG HỢP] TẤT CẢ MODULE ĐỀU CHẠY THÀNH CÔNG")
+        if any(status != "THÀNH CÔNG" for _, status in statuses):
+            log("[TỔNG HỢP] Hoàn tất với lỗi đã bỏ qua; cần kiểm tra dữ liệu bản nháp.")
+        else:
+            log("[TỔNG HỢP] TẤT CẢ BƯỚC ĐÃ CHỌN ĐỀU CHẠY THÀNH CÔNG")
     return 0
 
 

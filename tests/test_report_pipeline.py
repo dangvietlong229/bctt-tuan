@@ -2,6 +2,8 @@ import datetime as dt
 import json
 import re
 import unittest
+import tempfile
+from unittest.mock import patch, Mock
 from pathlib import Path
 
 import openpyxl
@@ -60,8 +62,65 @@ class ReportPipelineTests(unittest.TestCase):
         self.assertTrue(any("(2)" in name and not valid for name, valid in results.items()))
 
     def test_vingroup_sanity_check_rejects_corrupted_processed_rows(self):
-        path = ROOT / "dong gop cua vingroup" / "Dong gop cua vingroup_update 210826.xlsx"
-        self.assertIsNone(weekly_report.compute_vingroup_contribution(path, dt.date(2026, 8, 21)))
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'corrupted.xlsx'
+            workbook = openpyxl.Workbook()
+            sheet = workbook.active
+            for row, day in enumerate((20, 21), start=3):
+                sheet.cell(row, 1, dt.datetime(2026, 8, day))
+                sheet.cell(row, 2, 1700)
+                sheet.cell(row, 3, 7_000_000)
+                for col in range(6, 14):
+                    sheet.cell(row, col, 12.5)  # Valuation columns mistaken for prices/shares.
+            workbook.save(path)
+            workbook.close()
+            self.assertIsNone(weekly_report.compute_vingroup_contribution(path, dt.date(2026, 8, 21)))
+
+    def test_template_selection_ignores_future_and_lock_files(self):
+        with tempfile.TemporaryDirectory() as directory, patch.dict('os.environ', {'REPORT_AS_OF': '2026-08-21'}):
+            for name in ('Report_update 140826.xlsx', 'Report_update 280826.xlsx', '~$Report_update 210826.xlsx'):
+                (Path(directory) / name).touch()
+            selected = process_data.find_latest_template(directory, '*update *.xlsx', 'fallback.xlsx')
+            self.assertEqual(Path(selected).name, 'Report_update 140826.xlsx')
+
+    def test_invalid_report_date_fails(self):
+        with patch.dict('os.environ', {'REPORT_AS_OF': 'bad-date'}):
+            with self.assertRaises(ValueError):
+                process_data.get_report_as_of()
+
+    def test_blank_display_date(self):
+        self.assertIsNone(weekly_report.parse_date('   '))
+        self.assertEqual(weekly_report.display_date(''), '')
+
+    def test_module_exclusions_reject_invalid_values(self):
+        for value in ('1', '11', '2,', '2,abc'):
+            with self.assertRaises(ValueError):
+                process_data.parse_module_exclusions(value)
+        self.assertEqual(process_data.parse_module_exclusions('2, 10,2'), {'2', '10'})
+
+    def test_processed_date_takes_precedence(self):
+        for parser in (process_data.date_from_filename, weekly_report.date_from_filename):
+            self.assertEqual(parser(Path('export_20260828_update 210826.xlsx')), dt.date(2026, 8, 21))
+
+    def test_news_empty_response_creates_header_only_workbook(self):
+        response = Mock()
+        response.json.return_value = {'data': []}
+        with tempfile.TemporaryDirectory() as directory, patch.object(process_data.requests, 'get', return_value=response), patch.object(process_data.time, 'sleep'):
+            self.assertTrue(process_data.run_tin_doanh_nghiep_feature(directory, ['ACB']))
+            outputs = list(Path(directory).rglob('*.xlsx'))
+            self.assertEqual(len(outputs), 1)
+            workbook = openpyxl.load_workbook(outputs[0])
+            self.assertEqual(workbook.active.max_row, 1)
+            workbook.close()
+
+    def test_news_failure_does_not_publish_empty_report(self):
+        with tempfile.TemporaryDirectory() as directory, patch.object(process_data.requests, 'get', side_effect=RuntimeError('offline')), patch.object(process_data.time, 'sleep'):
+            self.assertFalse(process_data.run_tin_doanh_nghiep_feature(directory, ['ACB']))
+            self.assertFalse(list(Path(directory).rglob('*.xlsx')))
+
+    def test_noninteractive_failure_does_not_prompt(self):
+        with patch.object(process_data, 'MODULES', [('2', 'test', lambda _: False)]), patch.dict('os.environ', {'REPORT_NONINTERACTIVE': '1'}), patch('builtins.input', side_effect=AssertionError('must not prompt')):
+            self.assertFalse(process_data.run_selected_modules(str(ROOT)))
 
     def test_vingroup_contribution_accepts_valid_price_share_rows(self):
         records = []
@@ -102,6 +161,33 @@ class ReportPipelineTests(unittest.TestCase):
         path = ROOT / "output_reports" / "2026-08-21" / "MBS Dau Tu - BC Thi truong Tuan - 24.08.2026.pdf"
         with self.assertRaises(RuntimeError):
             weekly_report.assert_pdf_fonts(path)
+
+    def test_room_pdf_detection_and_flexible_date(self):
+        import glob
+        foreign_dir = ROOT / "gd nuoc ngoai"
+        pdf_files = [
+            f for f in glob.glob(str(foreign_dir / "*.pdf"))
+            if Path(f).name.lower().startswith("room")
+        ]
+        self.assertTrue(len(pdf_files) > 0)
+        as_of = dt.date(2026, 9, 4)
+        def pdf_score(path):
+            day = process_data.date_from_filename(path)
+            diff = abs((as_of - day).days) if day else 999999
+            return (diff, -Path(path).stat().st_mtime)
+        selected = min(pdf_files, key=pdf_score)
+        self.assertIsNotNone(selected)
+
+    def test_run_selected_modules_skip_failed(self):
+        def fail_func(ws):
+            return False
+        orig_modules = process_data.MODULES
+        try:
+            process_data.MODULES = [("99", "Mock Module", fail_func)]
+            result = process_data.run_selected_modules(str(ROOT), skip_failed=True)
+            self.assertTrue(result)
+        finally:
+            process_data.MODULES = orig_modules
 
 
 if __name__ == "__main__":

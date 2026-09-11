@@ -1,3 +1,6 @@
+from report_files import (friday_on_or_before, get_report_as_of, get_update_suffix,
+                          date_from_filename, select_file_for_as_of,
+                          find_latest_template, filter_raw_files, parse_module_exclusions)
 import os
 import glob
 import re
@@ -31,57 +34,6 @@ if os.name == "nt":
         ) from exc
 
 
-def friday_on_or_before(day: datetime.date) -> datetime.date:
-    return day - datetime.timedelta(days=(day.weekday() - 4) % 7)
-
-
-def get_report_as_of():
-    configured = os.environ.get("REPORT_AS_OF", "").strip()
-    if configured:
-        try:
-            return datetime.date.fromisoformat(configured)
-        except ValueError:
-            print(f"WARNING: REPORT_AS_OF không hợp lệ: {configured}; dùng ngày hệ thống.")
-    return friday_on_or_before(datetime.date.today())
-
-
-def get_update_suffix():
-    return f"_update {get_report_as_of().strftime('%d%m%y')}"
-
-
-def date_from_filename(file_path):
-    name = os.path.basename(file_path)
-    for token in re.findall(r'(?<!\d)(20\d{6})(?!\d)', name):
-        try:
-            return datetime.datetime.strptime(token, '%Y%m%d').date()
-        except ValueError:
-            pass
-    for token in re.findall(r'(?i)(?:update[ _-]*)(\d{6})(?!\d)', name):
-        try:
-            return datetime.datetime.strptime(token, '%d%m%y').date()
-        except ValueError:
-            pass
-    for token in re.findall(r'(?<!\d)(\d{8})(?!\d)', name):
-        try:
-            return datetime.datetime.strptime(token, '%d%m%Y').date()
-        except ValueError:
-            pass
-    return None
-
-
-def select_file_for_as_of(paths, as_of, require_exact=False):
-    dated = [(path, date_from_filename(path)) for path in paths]
-    if require_exact:
-        eligible = [path for path, day in dated if day == as_of]
-    else:
-        eligible = [path for path, day in dated if day is not None and day <= as_of]
-    if eligible:
-        return max(eligible, key=lambda path: (date_from_filename(path), os.path.getmtime(path)))
-    if require_exact:
-        return None
-    undated = [path for path, day in dated if day is None]
-    return max(undated, key=os.path.getmtime) if undated else None
-
 def save_output_file(wb, original_template_path):
     dir_name = os.path.dirname(original_template_path)
     base_name = os.path.basename(original_template_path)
@@ -101,19 +53,6 @@ def save_output_file(wb, original_template_path):
             os.remove(temporary_path)
     print(f"Saved processed output to: {output_path}")
     return output_path
-
-def find_latest_template(directory, pattern, fallback_name):
-    files = glob.glob(os.path.join(directory, pattern))
-    # Exclude temporary Excel files starting with ~$
-    files = [f for f in files if not os.path.basename(f).startswith('~$')]
-    if files:
-        # Sort by modification time to get the latest processed file
-        files.sort(key=os.path.getmtime)
-        return files[-1]
-    return os.path.join(directory, fallback_name)
-
-def filter_raw_files(file_list):
-    return [f for f in file_list if '_update' not in os.path.basename(f)]
 
 def translate_formulas_after_insert(ws, insert_row, num_inserted, ignore_cols=None):
     from openpyxl.formula.translate import Translator
@@ -582,7 +521,9 @@ def calculate_fiin_pe_pb_medians(mbs_dir):
         print("Warning: No daily transaction file ('*Du_lieu_giao_dich*.xlsx') found in 'danh muc mbs' for medians calculation.")
         return {}
     
-    daily_file = sorted(daily_files)[-1]
+    daily_file = select_file_for_as_of(filter_raw_files(daily_files), get_report_as_of())
+    if daily_file is None:
+        return {}
     print(f"Calculating 5-year medians from daily PE/PB file: {daily_file}")
     
     try:
@@ -602,6 +543,7 @@ def calculate_fiin_pe_pb_medians(mbs_dir):
                 break
         
         if not row8 or not row9:
+            wb.close()
             return {}
             
         curr_t = None
@@ -912,14 +854,24 @@ def run_mbs_feature(workspace_dir):
 def run_foreign_feature(workspace_dir):
     print("\n================ RUNNING GD NUOC NGOAI FEATURE ================")
     foreign_dir = os.path.join(workspace_dir, 'gd nuoc ngoai')
-    pdf_files = glob.glob(os.path.join(foreign_dir, 'Room_*.pdf'))
+    pdf_files = [
+        f for f in glob.glob(os.path.join(foreign_dir, '*.pdf'))
+        if os.path.basename(f).lower().startswith('room')
+    ]
     ban_files = filter_raw_files(glob.glob(os.path.join(foreign_dir, 'FiinProX_*Ban*.xlsx')))
     mua_files = filter_raw_files(glob.glob(os.path.join(foreign_dir, 'FiinProX_*Mua*.xlsx')))
 
     as_of = get_report_as_of()
     ban_file = select_file_for_as_of(ban_files, as_of, require_exact=True)
     mua_file = select_file_for_as_of(mua_files, as_of, require_exact=True)
-    pdf_file = select_file_for_as_of(pdf_files, as_of, require_exact=False)
+
+    # Pick the best matching Room PDF (closest to as_of, regardless of age or date mismatch)
+    def pdf_score(path):
+        day = date_from_filename(path)
+        diff = abs((as_of - day).days) if day else 999999
+        return (diff, -os.path.getmtime(path))
+
+    pdf_file = min(pdf_files, key=pdf_score) if pdf_files else None
 
     if not pdf_file or not ban_file or not mua_file:
         print(
@@ -931,11 +883,9 @@ def run_foreign_feature(workspace_dir):
         print("Skipping GD Nuoc Ngoai: file Mua và Bán không cùng ngày dữ liệu.")
         return False
     room_date = date_from_filename(pdf_file)
-    if room_date and (as_of - room_date).days > 31:
-        print(f"Skipping GD Nuoc Ngoai: Room PDF đã cũ {(as_of - room_date).days} ngày.")
-        return False
     if room_date and room_date != as_of:
-        print(f"WARNING: dùng Room PDF ngày {room_date:%d/%m/%Y} cho kỳ {as_of:%d/%m/%Y}.")
+        diff_days = abs((as_of - room_date).days)
+        print(f"WARNING: dùng Room PDF ngày {room_date:%d/%m/%Y} cho kỳ {as_of:%d/%m/%Y} (lệch {diff_days} ngày).")
     print(f"Found room PDF: {pdf_file}")
 
     room_data = {}
@@ -2047,6 +1997,7 @@ def run_tin_doanh_nghiep_feature(workspace_dir, watchlist=None):
     
     print(f"[*] Thu thập Tin chính thống từ {start_date.strftime('%Y-%m-%d')} đến {end_date.strftime('%Y-%m-%d')}...")
     raw_news = []
+    failed_tickers = []
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
     }
@@ -2099,14 +2050,19 @@ def run_tin_doanh_nghiep_feature(workspace_dir, watchlist=None):
                         print(f"[!] Lỗi parse ngày tháng {time_str}: {e}")
         except Exception as e:
             print(f"[!] Lỗi khi lấy tin tức cho mã {ticker} qua API: {e}")
-        time.sleep(1)
+            failed_tickers.append(ticker)
+        time.sleep(0.5)
         
-    if not raw_news:
-        print("⚠️ Không thu thập được tin tức chính thống nào.")
+    if failed_tickers:
+        print("Không xuất báo cáo tin thiếu dữ liệu: " + ", ".join(failed_tickers))
         return False
+
+    if not raw_news:
+        print("ℹ️ Không có tin tức chính thống nào được công bố trong tuần vừa qua cho các mã theo dõi.")
         
     df = pd.DataFrame(raw_news)
-    df.drop_duplicates(subset=['Tiêu đề gốc'], keep='first', inplace=True)
+    if not df.empty:
+        df.drop_duplicates(subset=['Mã CK', 'Tiêu đề gốc'], keep='first', inplace=True)
     cleaned_news = df.to_dict('records')
     
     processed_news = []
@@ -2141,7 +2097,8 @@ def run_tin_doanh_nghiep_feature(workspace_dir, watchlist=None):
             if not sheet_df.empty:
                 sheet_df.to_excel(writer, sheet_name=sheet_name, index=False)
             else:
-                pd.DataFrame(columns=["Không có dữ liệu"]).to_excel(writer, sheet_name=sheet_name, index=False)
+                columns = ["Mã CK", "Thời gian", "Loại tin", "Phân loại", "Tiêu đề gốc", "Nội dung tóm tắt", "Tác động", "Link nguồn", "PDF Link"]
+                pd.DataFrame(columns=columns).to_excel(writer, sheet_name=sheet_name, index=False)
         
         workbook = writer.book
         for sheet_name in workbook.sheetnames:
@@ -2165,16 +2122,7 @@ def run_tin_doanh_nghiep_feature(workspace_dir, watchlist=None):
                 
     print(f"Saved processed output to: {filepath}")
     
-    # Delete old report files in this directory
-    old_reports = glob.glob(os.path.join(output_dir, "BaoCao_TinChinhThong_*_update *.xlsx"))
-    for p in old_reports:
-        if os.path.abspath(p) != os.path.abspath(filepath):
-            try:
-                os.remove(p)
-                print(f"Deleted old report file: {os.path.basename(p)}")
-            except OSError as e:
-                print(f"Warning: Could not delete old report file {p}: {e}")
-                
+    # Retain prior reporting periods for reproducible historical runs.
     print("✅ HOÀN THÀNH QUÁ TRÌNH TẠO BÁO CÁO TIN DOANH NGHIỆP!\n")
     return True
 
@@ -2457,8 +2405,9 @@ MODULES = [
 ]
 
 
-def run_selected_modules(workspace_dir, excluded=None):
+def run_selected_modules(workspace_dir, excluded=None, skip_failed=False):
     excluded = excluded or set()
+    parse_module_exclusions(','.join(excluded))
     results = []
     for number, name, function in MODULES:
         if number in excluded:
@@ -2476,7 +2425,28 @@ def run_selected_modules(workspace_dir, excluded=None):
     failed = [name for name, status, _ in results if status in {"KHÔNG ĐẠT", "LỖI"}]
     if failed:
         print("\n[TỔNG HỢP] CÓ MODULE KHÔNG ĐẠT: " + ", ".join(failed))
-        return False
+        if skip_failed:
+            print("[TIẾP TỤC] Tự động bỏ qua các module không đạt theo tùy chọn --skip-failed.")
+            return True
+        if os.environ.get("REPORT_NONINTERACTIVE") == "1" or not sys.stdin.isatty():
+            return False
+        try:
+            print("\n" + "=" * 65)
+            print("CẢNH BÁO: Các module sau đây không thành công:")
+            for item in failed:
+                print(f"  ❌ {item}")
+            print("=" * 65)
+            ans = input("👉 Bạn có muốn BỎ QUA các module bị lỗi và tiếp tục tạo bản nháp? (y/n) [mặc định: y]: ").strip().lower()
+            if ans in {'', 'y', 'yes', 'c', 'co', 'ok'}:
+                print("[TIẾP TỤC] Đã chọn bỏ qua các module lỗi. Tiếp tục tiến trình...\n")
+                return True
+            else:
+                print("[DỪNG] Bạn đã chọn dừng chương trình.\n")
+                return False
+        except (KeyboardInterrupt, EOFError):
+            print("\nKhông nhận được phản hồi đầu vào hoặc bị hủy.")
+            return False
+
     print("\n[TỔNG HỢP] TẤT CẢ MODULE ĐƯỢC CHỌN ĐỀU CHẠY THÀNH CÔNG")
     return True
 
@@ -2587,16 +2557,19 @@ def main():
         arg = sys.argv[1].lower()
         if arg == 'all':
             excluded = set()
-            if len(sys.argv) > 2:
+            skip_failed = '--skip-failed' in sys.argv
+            if len(sys.argv) > 2 and not sys.argv[2].startswith('--'):
                 excluded = {x.strip() for x in sys.argv[2].split(',')}
             elif '--exclude' in sys.argv:
                 try:
                     idx = sys.argv.index('--exclude')
                     excluded = {x.strip() for x in sys.argv[idx+1].split(',')}
                 except (ValueError, IndexError):
-                    pass
+                    raise SystemExit("--exclude requires module numbers 2-10")
 
-            if not run_selected_modules(workspace_dir, excluded):
+            parse_module_exclusions(','.join(excluded))
+
+            if not run_selected_modules(workspace_dir, excluded, skip_failed=skip_failed):
                 raise SystemExit(1)
         elif 'nganh' in arg:
             if run_nganh_feature(workspace_dir) is False:

@@ -96,3 +96,27 @@ Lệnh `finalize` luôn yêu cầu `review/commentary.json` đã được duyệ
 - Trên Windows, PowerPoint desktop trực tiếp xuất PDF; không cần LibreOffice, Node.js hoặc bộ công cụ Codex.
 - Trên macOS, nếu LibreOffice không xuất được PDF, chương trình dùng bộ render dự phòng khi môi trường Codex có sẵn.
 - Trong lúc chạy, không nên chỉnh đúng file Excel hoặc PowerPoint đang được chương trình mở. Chương trình cố gắng giữ nguyên các file Office khác đang mở, nhưng đóng file đích trước khi chạy vẫn là cách an toàn nhất.
+# Kiểm tra và chạy Windows theo kỳ
+
+`1_Tao_ban_nhap_Windows.bat` nhận thêm tham số của script PowerShell:
+
+```bat
+1_Tao_ban_nhap_Windows.bat -AsOf 2026-09-04 -ExcludeModules "9,10"
+```
+
+Để chạy không hỏi tương tác, gọi trực tiếp script (file `.bat` vẫn dừng ở `pause` cuối):
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts\run_weekly_report_windows.ps1 -ReportCommand all -AsOf 2026-09-04 -NonInteractive
+```
+
+Chỉ dùng `-SkipFailed` khi chấp nhận tiếp tục với module lỗi. Việc kiểm tra nguồn trước khi tạo bản nháp vẫn được áp dụng. `-AsOf`, `-ExcludeModules` và `-SkipFailed` chỉ dành cho tạo bản nháp.
+
+Hai bộ xử lý dùng chung `report_files.py` để chọn kỳ: ưu tiên ngày `_update`, không lấy file tương lai hoặc file khóa Excel. Ngày `REPORT_AS_OF` sai sẽ dừng xử lý. Báo cáo tin cũ được giữ lại; API lỗi không tạo báo cáo tin rỗng.
+
+Kiểm thử không gọi API trực tiếp:
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+node --test api-fiin/test/validation.test.js
+```

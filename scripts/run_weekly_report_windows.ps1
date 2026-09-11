@@ -2,7 +2,10 @@ param(
     [Parameter(Mandatory = $true)]
     [ValidateSet("all", "finalize")]
     [string]$ReportCommand,
-    [string]$ExcludeModules = ""
+    [string]$ExcludeModules = "",
+    [switch]$SkipFailed,
+    [switch]$NonInteractive,
+    [string]$AsOf = ""
 )
 
 Set-StrictMode -Version Latest
@@ -20,7 +23,13 @@ try {
     if (-not (Test-Path -LiteralPath $python -PathType Leaf)) {
         throw "Python environment not found. Run 0_Cai_dat_Windows.bat first."
     }
-    if ($ReportCommand -eq "all" -and [string]::IsNullOrWhiteSpace($ExcludeModules)) {
+    if ($ReportCommand -eq "finalize" -and ($SkipFailed -or $ExcludeModules -or $AsOf)) {
+        throw "SkipFailed, ExcludeModules and AsOf apply only to draft creation."
+    }
+    if ($ExcludeModules -and $ExcludeModules -notmatch '^\s*(?:[2-9]|10)(?:\s*,\s*(?:[2-9]|10))*\s*$') {
+        throw "Module numbers must be 2-10, separated by commas."
+    }
+    if ($ReportCommand -eq "all" -and -not $NonInteractive -and [string]::IsNullOrWhiteSpace($ExcludeModules)) {
         Write-Host ""
         Write-Host "CAC MODULE XU LY DU LIEU:" -ForegroundColor Cyan
         Write-Host "  2. Nganh"
@@ -49,12 +58,20 @@ try {
         Write-Host ""
     }
 
+    $extraArgs = @()
+    if ($AsOf) {
+        $extraArgs += @("--as-of", $AsOf)
+    }
+    if ($NonInteractive) {
+        $env:REPORT_NONINTERACTIVE = "1"
+    }
     if ($ReportCommand -eq "all" -and -not [string]::IsNullOrWhiteSpace($ExcludeModules)) {
-        & $python $program $ReportCommand --exclude-modules $ExcludeModules
+        $extraArgs += @("--exclude-modules", $ExcludeModules)
     }
-    else {
-        & $python $program $ReportCommand
+    if ($SkipFailed) {
+        $extraArgs += "--skip-failed"
     }
+    & $python $program $ReportCommand @extraArgs
     exit $LASTEXITCODE
 }
 catch {

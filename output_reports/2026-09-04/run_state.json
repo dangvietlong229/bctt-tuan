@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-09-04",
+  "draft_pptx": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\output_reports\\2026-09-04\\MBS Dau Tu - BC Thi truong Tuan - 07.09.2026 - DRAFT.pptx",
+  "final_pptx": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\output_reports\\2026-09-04\\MBS Dau Tu - BC Thi truong Tuan - 07.09.2026.pptx",
+  "final_pdf": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\output_reports\\2026-09-04\\MBS Dau Tu - BC Thi truong Tuan - 07.09.2026.pdf",
+  "review_prompt": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\output_reports\\2026-09-04\\review\\review_prompt.txt",
+  "commentary": null,
+  "warnings": [],
+  "data_quality": {
+    "errors": [],
+    "warnings": []
+  },
+  "sources": {
+    "sectors": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\nganh\\Nganh_update 040926.xlsx",
+    "portfolio": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\danh muc mbs\\Danh muc mbs_update 040926.xlsx",
+    "foreign_buy": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\gd nuoc ngoai\\FiinProX_Nuoc ngoai_Top gia tri rong_Mua_VNINDEX_20260904_update 040926.xlsx",
+    "foreign_sell": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\gd nuoc ngoai\\FiinProX_Nuoc ngoai_Top gia tri rong_Ban_VNINDEX_20260904_update 040926.xlsx",
+    "liquidity": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\thanh khoan tt\\Thanh khoan tt_update 040926.xlsx",
+    "vingroup": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\dong gop cua vingroup\\Dong gop cua vingroup_update 040926.xlsx",
+    "foreign_watchlist": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\nn ban rong\\NN ban rong_update 040926.xlsx",
+    "proprietary": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\gd tu doanh\\Thong ke Tu doanh Co phieu_update 040926.xlsx",
+    "company_news": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\tin doanh nghiep\\BaoCao_TinChinhThong_ACB_TCB_VIB_VPB_Tuan_29_04_Sep_2026_update 040926.xlsx",
+    "calendar": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\lich su kien\\Lich su kien_update 040926.xlsx"
+  },
+  "weekly_net_values": {
+    "foreign_vnd": -1298130753720.0,
+    "proprietary_vnd": -436649348000.0,
+    "foreign_sources": [
+      "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\gd nuoc ngoai\\FiinProX_Nuoc ngoai_Top gia tri rong_Mua_VNINDEX_20260904_update 040926.xlsx",
+      "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\gd nuoc ngoai\\FiinProX_Nuoc ngoai_Top gia tri rong_Ban_VNINDEX_20260904_update 040926.xlsx"
+    ],
+    "proprietary_sources": [
+      "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\gd tu doanh\\FiinProX_Giao Dich To Chuc Trong Nuoc_Top gia tri rong_Mua_VNINDEX_20260904 (1).xlsx",
+      "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\gd tu doanh\\FiinProX_Giao Dich To Chuc Trong Nuoc_Top gia tri rong_Ban_VNINDEX_20260904 (1).xlsx"
+    ]
+  },
+  "vnindex_chart_image": "C:\\Users\\long.dangviet\\Documents\\GitHub\\BCTT Tuan\\incoming\\Screenshot 2026-09-04 165951.png"
+}

@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 >nul
-cd /d "%~dp0"
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\run_weekly_report_windows.ps1" -ReportCommand all
+cd /d "%~dp0" || exit /b 1
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\run_weekly_report_windows.ps1" -ReportCommand all %*
 set "status=%ERRORLEVEL%"
 echo.
 if "%status%"=="0" (
